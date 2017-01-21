@@ -54,6 +54,7 @@ function parseDocsTable($div) {
 }
 
 foreach($classFiles as $file => $options) {
+//	debug:
 //	if($file != 'Caching') {
 //		continue;
 //	}
@@ -111,9 +112,4 @@ foreach($classFiles as $file => $options) {
 	$jsdoc = ($template->render($classDocs));
 	$jsfile = fopen('../jsdocs/' . $file . '.js', 'w+');
 	fputs($jsfile, $jsdoc);
-//	$classFiles[$file] = $classDocs;
 }
-
-//print_r($classFiles);
-//print("Found " . count($allFiles) . " files in total" . PHP_EOL);
-//print("Found " . count($classFiles) . " class files" . PHP_EOL);
