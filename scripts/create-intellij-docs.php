@@ -55,6 +55,7 @@ foreach($classFiles as $file => $classDocs) {
 	$document->loadHTMLFile($docsPath . $file . '.html', LIBXML_NOWARNING);
 
 	$properties = array();
+	$staticProperties = array();
 	$methods = array();
 	$staticMethods = array();
 
@@ -79,6 +80,11 @@ foreach($classFiles as $file => $classDocs) {
 				$methods = array_merge($methods, $newMethods);
 				break;
 
+			case 'Static Variables':
+				$newProperties = parseDocsTable($div);
+				$staticProperties = array_merge($methods, $newProperties);
+				break;
+
 			case 'Static Functions':
 				$newMethods = parseDocsTable($div);
 				$staticMethods = array_merge($methods, $staticMethods);
@@ -92,6 +98,7 @@ foreach($classFiles as $file => $classDocs) {
 	$classFiles[$file] = array(
 		'properties' => $properties,
 		'methods' => $methods,
+		'staticProperties' => $staticProperties,
 		'staticMethods' => $staticMethods
 	);
 }
