@@ -6,7 +6,13 @@
 
 require_once 'vendor/autoload.php';
 
-$docsPath = '/Applications/Unity/Documentation/en/ScriptReference/';
+if(isset($argv[1])) {
+	$docsPath = $argv[1];
+} else {
+	// Use MacOS default if no path provided
+	$docsPath = '/Applications/Unity/Documentation/en/ScriptReference/';
+}
+
 $jsdocsPath = '../jsdocs/';
 $classRegex = "/^([a-zA-Z]*)\.html$/";
 $jarArchive = '../jar/unityscript';
