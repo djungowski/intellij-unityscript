@@ -23,12 +23,16 @@ $zip = null;
 
 $allFiles = scandir($docsPath);
 $classFiles = array();
+$skipFiles = array('index');
 
-// First: Cleanup
-print('Cleaning up...' . PHP_EOL);
+$loader = new Twig_Loader_Filesystem('./templates');
+$twig = new Twig_Environment($loader);
+$template = $twig->load('UnityScriptClass.twig');
+
 function cleanup($dir) {
 	$deletedFiles = 0;
 	$existingJsFiles = scandir($dir);
+	print('Cleaning up...' . PHP_EOL);
 	foreach($existingJsFiles as $file) {
 		if ($file != '.' && $file != '..') {
 			unlink($dir . $file);
@@ -36,18 +40,6 @@ function cleanup($dir) {
 		}
 	}
 	print('deleted ' . $deletedFiles . ' files in ' . $dir . PHP_EOL);
-}
-
-cleanup($jsdocsPath);
-$loader = new Twig_Loader_Filesystem('./templates');
-$twig = new Twig_Environment($loader);
-$template = $twig->load('UnityScriptClass.twig');
-
-foreach($allFiles as $file) {
-	$matches = array();
-	if(preg_match($classRegex, $file, $matches)) {
-		$classFiles[$matches[1]] = array();
-	}
 }
 
 function openZipFile($jarArchive) {
@@ -96,7 +88,16 @@ function getUnityVersionNumber($divNodes) {
 
 }
 
-$skipFiles = array('index');
+print('Looking for Script Reference docs in ' . $docsPath . PHP_EOL);
+// First: Cleanup
+cleanup($jsdocsPath);
+
+foreach($allFiles as $file) {
+	$matches = array();
+	if(preg_match($classRegex, $file, $matches)) {
+		$classFiles[$matches[1]] = array();
+	}
+}
 
 foreach($classFiles as $file => $options) {
 //	debug:
