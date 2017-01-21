@@ -9,6 +9,8 @@ Scripts and Builds in order to use IntelliJ with UnityScript
 5. Make sure that the JavaScript language version is set to ECMAScript 6 (IntelliJ Preferences → Project Settings -> JavaScript)
 6. You should now have proper code completion in IntelliJ (at least most of it ;))
 
+If you don't want to take these steps for every Unity project, add the Jar to the Global Libraries instead of only the Libraries
+
 ## Building yourself
 1. Clone the repository
 2. Make sure you have PHP and [Composer](https://getcomposer.org/) installed
