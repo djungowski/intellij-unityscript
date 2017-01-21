@@ -13,5 +13,5 @@ Scripts and Builds in order to use IntelliJ with UnityScript
 1. Clone the repository
 2. Make sure you have PHP and [Composer](https://getcomposer.org/) installed
 3. Navigate to the scripts folder: `cd scripts`
-4. Run the script: `php create-intellij-docs.php <path-to-unity-docs>`
+4. Run the script: `php create-intellij-docs.php <path-to-unity-script-reference-docs>`. If you don't provide a path, it will automatically use the MacOS path `/Applications/Unity/Documentation/en/ScriptReference/`
 5. The jar file will be placed in the jar directory one level up
