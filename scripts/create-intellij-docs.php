@@ -4,11 +4,17 @@
  * an IntelliJ compatible docs package for UnityScript
  */
 
+require_once 'vendor/autoload.php';
+
 $docsPath = '/Applications/Unity/Documentation/en/ScriptReference/';
 $classRegex = "/^([a-zA-Z]*)\.html$/";
 
 $allFiles = scandir($docsPath);
 $classFiles = array();
+
+$loader = new Twig_Loader_Filesystem('./templates');
+$twig = new Twig_Environment($loader);
+$template = $twig->load('UnityScriptClass.twig');
 
 foreach($allFiles as $file) {
 	$matches = array();
@@ -47,8 +53,8 @@ function parseDocsTable($div) {
 	return $properties;
 }
 
-foreach($classFiles as $file => $classDocs) {
-//	if($file != 'Animator') {
+foreach($classFiles as $file => $options) {
+//	if($file != 'Caching') {
 //		continue;
 //	}
 	$document = new DOMDocument();
@@ -95,14 +101,19 @@ foreach($classFiles as $file => $classDocs) {
 		}
 	}
 
-	$classFiles[$file] = array(
-		'properties' => $properties,
-		'methods' => $methods,
-		'staticProperties' => $staticProperties,
-		'staticMethods' => $staticMethods
+	 $classDocs = array(
+		 'className' => $file,
+		 'properties' => $properties,
+		 'methods' => $methods,
+		 'staticProperties' => $staticProperties,
+		 'staticMethods' => $staticMethods
 	);
+	$jsdoc = ($template->render($classDocs));
+	$jsfile = fopen('../jsdocs/' . $file . '.js', 'w+');
+	fputs($jsfile, $jsdoc);
+//	$classFiles[$file] = $classDocs;
 }
 
-print_r($classFiles);
+//print_r($classFiles);
 //print("Found " . count($allFiles) . " files in total" . PHP_EOL);
 //print("Found " . count($classFiles) . " class files" . PHP_EOL);

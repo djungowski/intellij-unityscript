@@ -1,0 +1,43 @@
+class {{ className }} {
+{% for property in staticProperties %}
+    /**
+     * {{ property.desc }}
+     */
+    static get {{ property.name }}() {}
+
+    /**
+     * {{ property.desc }}
+     */
+    static set {{ property.name }}(value) {}
+
+{% endfor %}
+
+{% for method in staticMethods %}
+    /**
+     * {{ method.desc }}
+     */
+    static {{ method.name }}() {}
+
+{% endfor %}
+
+{% for property in properties %}
+    /**
+     * {{ property.desc }}
+     */
+    get {{ property.name }}() {}
+
+    /**
+     * {{ property.desc }}
+     */
+    set {{ property.name }}(value) {}
+
+{% endfor %}
+
+{% for method in methods %}
+    /**
+     * {{ method.desc }}
+     */
+    {{ method.name }}() {}
+
+{% endfor %}
+}
