@@ -7,11 +7,32 @@
 require_once 'vendor/autoload.php';
 
 $docsPath = '/Applications/Unity/Documentation/en/ScriptReference/';
+$jsdocsPath = '../jsdocs/';
 $classRegex = "/^([a-zA-Z]*)\.html$/";
+$jarArchive = '../jar/unityscript';
+$jarFileEnding = 'jar';
+$createdFiles = 0;
+$version = null;
+$zip = null;
 
 $allFiles = scandir($docsPath);
 $classFiles = array();
 
+// First: Cleanup
+print('Cleaning up...' . PHP_EOL);
+function cleanup($dir) {
+	$deletedFiles = 0;
+	$existingJsFiles = scandir($dir);
+	foreach($existingJsFiles as $file) {
+		if ($file != '.' && $file != '..') {
+			unlink($dir . $file);
+			$deletedFiles++;
+		}
+	}
+	print('deleted ' . $deletedFiles . ' files in ' . $dir . PHP_EOL);
+}
+
+cleanup($jsdocsPath);
 $loader = new Twig_Loader_Filesystem('./templates');
 $twig = new Twig_Environment($loader);
 $template = $twig->load('UnityScriptClass.twig');
@@ -21,6 +42,12 @@ foreach($allFiles as $file) {
 	if(preg_match($classRegex, $file, $matches)) {
 		$classFiles[$matches[1]] = array();
 	}
+}
+
+function openZipFile($jarArchive) {
+	$zip = new ZipArchive();
+	$zip->open($jarArchive, ZipArchive::CREATE | ZipArchive::OVERWRITE);
+	return $zip;
 }
 
 // Suppress "Unexpected end tag: input" this way, since LIBXML_NOWARNING doesn't seem to do anything
@@ -53,6 +80,16 @@ function parseDocsTable($div) {
 	return $properties;
 }
 
+function getUnityVersionNumber($divNodes) {
+	foreach ($divNodes as $div) {
+		if(nodeHasClass($div, 'version-number')) {
+			$bs = $div->getElementsByTagName('b');
+			return $bs[0]->textContent;
+		}
+	}
+
+}
+
 foreach($classFiles as $file => $options) {
 //	debug:
 //	if($file != 'Caching') {
@@ -67,6 +104,15 @@ foreach($classFiles as $file => $options) {
 	$staticMethods = array();
 
 	$divs = $document->getElementsByTagName('div');
+
+	if (is_null($version)) {
+		$version = getUnityVersionNumber($divs);
+		print('Unity Version: ' . $version . PHP_EOL);
+		$jarArchive = "$jarArchive-$version.$jarFileEnding";
+		$zip = openZipFile($jarArchive);
+	}
+
+
 	foreach($divs as $div) {
 		if (!nodeHasClass($div, 'subsection')) {
 			continue;
@@ -110,6 +156,13 @@ foreach($classFiles as $file => $options) {
 		 'staticMethods' => $staticMethods
 	);
 	$jsdoc = ($template->render($classDocs));
-	$jsfile = fopen('../jsdocs/' . $file . '.js', 'w+');
+	$jsfile = fopen($jsdocsPath . $file . '.js', 'w+');
 	fputs($jsfile, $jsdoc);
+	$createdFiles++;
 }
+
+print('Created ' . $createdFiles . ' js files' . PHP_EOL);
+$zip->addPattern('*.*', '../jsdocs/');
+$zip->close();
+print('Created JAR archive in ' . $jarArchive . PHP_EOL);
+print('Done.' . PHP_EOL);
