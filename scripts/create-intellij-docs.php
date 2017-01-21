@@ -90,11 +90,18 @@ function getUnityVersionNumber($divNodes) {
 
 }
 
+$skipFiles = array('index');
+
 foreach($classFiles as $file => $options) {
 //	debug:
 //	if($file != 'Caching') {
 //		continue;
 //	}
+
+	if(in_array($file, $skipFiles)) {
+		continue;
+	}
+
 	$document = new DOMDocument();
 	$document->loadHTMLFile($docsPath . $file . '.html', LIBXML_NOWARNING);
 
@@ -156,13 +163,15 @@ foreach($classFiles as $file => $options) {
 		 'staticMethods' => $staticMethods
 	);
 	$jsdoc = ($template->render($classDocs));
-	$jsfile = fopen($jsdocsPath . $file . '.js', 'w+');
+	$currentJsDocsFile = $jsdocsPath . $file . '.js';
+	$jsfile = fopen($currentJsDocsFile, 'w+');
 	fputs($jsfile, $jsdoc);
+	fclose($jsfile);
 	$createdFiles++;
+	$zip->addFile($currentJsDocsFile, basename($currentJsDocsFile));
 }
 
 print('Created ' . $createdFiles . ' js files' . PHP_EOL);
-$zip->addPattern('*.*', '../jsdocs/');
 $zip->close();
 print('Created JAR archive in ' . $jarArchive . PHP_EOL);
 print('Done.' . PHP_EOL);
