@@ -101,7 +101,7 @@ foreach($allFiles as $file) {
 
 foreach($classFiles as $file => $options) {
 //	debug:
-//	if($file != 'Caching') {
+//	if($file != 'Physics') {
 //		continue;
 //	}
 
@@ -149,12 +149,12 @@ foreach($classFiles as $file => $options) {
 
 			case 'Static Variables':
 				$newProperties = parseDocsTable($div);
-				$staticProperties = array_merge($methods, $newProperties);
+				$staticProperties = array_merge($staticProperties, $newProperties);
 				break;
 
 			case 'Static Functions':
 				$newMethods = parseDocsTable($div);
-				$staticMethods = array_merge($methods, $staticMethods);
+				$staticMethods = array_merge($staticMethods, $newMethods);
 				break;
 
 			default:
