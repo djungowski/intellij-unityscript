@@ -11,14 +11,19 @@ class Event {
 
 
     /**
-     * Get a filtered event type for a given control ID.
+     * Returns the current number of events that are stored in the event queue.
      */
-    static GetTypeForControl() {}
+    static GetEventCount() {}
 
     /**
-     * Use this event.
+     * Create a keyboard event.
      */
-    static Use() {}
+    static KeyboardEvent() {}
+
+    /**
+     * Get the next queued [Event] from the event system.
+     */
+    static PopEvent() {}
 
 
     /**

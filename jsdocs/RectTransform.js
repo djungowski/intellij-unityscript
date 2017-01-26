@@ -1,179 +1,34 @@
 class RectTransform {
 
     /**
-     * Get the corners of the calculated rectangle in the local space of its Transform.
+     * Removes a gameobject, component or asset.
      */
-    static GetLocalCorners() {}
+    static Destroy() {}
 
     /**
-     * Get the corners of the calculated rectangle in world space.
+     * Destroys the object obj immediately.
      */
-    static GetWorldCorners() {}
+    static DestroyImmediate() {}
 
     /**
-     * Set the distance of this rectangle relative to a specified edge of the parent rectangle, while also setting its size.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static SetInsetAndSizeFromParentEdge() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Makes the RectTransform calculated rect be a given size on the specified axis.
+     * Returns the first active loaded object of Type type.
      */
-    static SetSizeWithCurrentAnchors() {}
+    static FindObjectOfType() {}
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static BroadcastMessage() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Is this game object tagged with tag ?
+     * Clones the object original and returns the clone.
      */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Unparents all children.
-     */
-    static DetachChildren() {}
-
-    /**
-     * Finds a child by name and returns it.
-     */
-    static Find() {}
-
-    /**
-     * Returns a transform child by index.
-     */
-    static GetChild() {}
-
-    /**
-     * Gets the sibling index.
-     */
-    static GetSiblingIndex() {}
-
-    /**
-     * Transforms a direction from world space to local space. The opposite of Transform.TransformDirection.
-     */
-    static InverseTransformDirection() {}
-
-    /**
-     * Transforms position from world space to local space.
-     */
-    static InverseTransformPoint() {}
-
-    /**
-     * Transforms a vector from world space to local space. The opposite of Transform.TransformVector.
-     */
-    static InverseTransformVector() {}
-
-    /**
-     * Is this transform a child of parent?
-     */
-    static IsChildOf() {}
-
-    /**
-     * Rotates the transform so the forward vector points at /target/&#039;s current position.
-     */
-    static LookAt() {}
-
-    /**
-     * Applies a rotation of eulerAngles.z degrees around the z axis, eulerAngles.x degrees around the x axis, and eulerAngles.y degrees around the y axis (in that order).
-     */
-    static Rotate() {}
-
-    /**
-     * Rotates the transform about axis passing through point in world coordinates by angle degrees.
-     */
-    static RotateAround() {}
-
-    /**
-     * Move the transform to the start of the local transform list.
-     */
-    static SetAsFirstSibling() {}
-
-    /**
-     * Move the transform to the end of the local transform list.
-     */
-    static SetAsLastSibling() {}
-
-    /**
-     * Set the parent of the transform.
-     */
-    static SetParent() {}
-
-    /**
-     * Sets the sibling index.
-     */
-    static SetSiblingIndex() {}
-
-    /**
-     * Transforms direction from local space to world space.
-     */
-    static TransformDirection() {}
-
-    /**
-     * Transforms position from local space to world space.
-     */
-    static TransformPoint() {}
-
-    /**
-     * Transforms vector from local space to world space.
-     */
-    static TransformVector() {}
-
-    /**
-     * Moves the transform in the direction and distance of translation.
-     */
-    static Translate() {}
+    static Instantiate() {}
 
 
     /**

@@ -20,6 +20,11 @@ class Cursor {
     static set visible(value) {}
 
 
+    /**
+     * Change the mouse cursor to the set texture OnMouseEnter.
+     */
+    static SetCursor() {}
+
 
 
 }

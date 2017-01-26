@@ -21,64 +21,44 @@ class AudioListener {
 
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+     * Provides a block of the listener (master)&#039;s output data.
      */
-    static BroadcastMessage() {}
+    static GetOutputData() {}
 
     /**
-     * Is this game object tagged with tag ?
+     * Provides a block of the listener (master)&#039;s spectrum data.
      */
-    static CompareTag() {}
+    static GetSpectrumData() {}
 
     /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
+     * Removes a gameobject, component or asset.
      */
-    static GetComponent() {}
+    static Destroy() {}
 
     /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
+     * Destroys the object obj immediately.
      */
-    static GetComponentInChildren() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns the component of Type type in the GameObject or any of its parents.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetComponentInParent() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns all components of Type type in the GameObject.
+     * Returns the first active loaded object of Type type.
      */
-    static GetComponents() {}
+    static FindObjectOfType() {}
 
     /**
-     * Returns all components of Type type in the GameObject or any of its children.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetComponentsInChildren() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns all components of Type type in the GameObject or any of its parents.
+     * Clones the object original and returns the clone.
      */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

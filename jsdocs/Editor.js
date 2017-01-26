@@ -1,154 +1,49 @@
 class Editor {
 
     /**
-     * Draw the built-in inspector.
+     * On return previousEditor is an editor for targetObject or targetObjects. The function either returns if the editor is already tracking the objects, or Destroys the previous editor and creates a new one.
      */
-    static DrawDefaultInspector() {}
+    static CreateCachedEditor() {}
 
     /**
-     * Call this function to draw the header of the editor.
+     * Make a custom editor for targetObject or targetObjects.
      */
-    static DrawHeader() {}
+    static CreateEditor() {}
 
     /**
-     * The first entry point for Preview Drawing.
+     * Removes a gameobject, component or asset.
      */
-    static DrawPreview() {}
+    static Destroy() {}
 
     /**
-     * Implement this method to show asset information on top of the asset preview.
+     * Destroys the object obj immediately.
      */
-    static GetInfoString() {}
+    static DestroyImmediate() {}
 
     /**
-     * Override this method if you want to change the label of the Preview area.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetPreviewTitle() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Override this method in subclasses if you implement OnPreviewGUI.
+     * Returns the first active loaded object of Type type.
      */
-    static HasPreviewGUI() {}
+    static FindObjectOfType() {}
 
     /**
-     * Implement this function to make a custom inspector.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static OnInspectorGUI() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Implement to create your own interactive custom preview. Interactive custom previews are used in the preview area of the inspector and the object selector.
+     * Clones the object original and returns the clone.
      */
-    static OnInteractivePreviewGUI() {}
+    static Instantiate() {}
 
     /**
-     * Implement to create your own custom preview for the preview area of the inspector, primary editor headers and the object selector.
+     * Creates an instance of a scriptable object.
      */
-    static OnPreviewGUI() {}
-
-    /**
-     * Override this method if you want to show custom controls in the preview header.
-     */
-    static OnPreviewSettings() {}
-
-    /**
-     * Override this method if you want to render a static preview that shows.
-     */
-    static RenderStaticPreview() {}
-
-    /**
-     * Repaint any inspectors that shows this editor.
-     */
-    static Repaint() {}
-
-    /**
-     * Does this edit require to be repainted constantly in its current state?
-     */
-    static RequiresConstantRepaint() {}
-
-    /**
-     * Override this method in subclasses to return false if you don&#039;t want default margins.
-     */
-    static UseDefaultMargins() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Draw the built-in inspector.
-     */
-    static DrawDefaultInspector() {}
-
-    /**
-     * Call this function to draw the header of the editor.
-     */
-    static DrawHeader() {}
-
-    /**
-     * The first entry point for Preview Drawing.
-     */
-    static DrawPreview() {}
-
-    /**
-     * Implement this method to show asset information on top of the asset preview.
-     */
-    static GetInfoString() {}
-
-    /**
-     * Override this method if you want to change the label of the Preview area.
-     */
-    static GetPreviewTitle() {}
-
-    /**
-     * Override this method in subclasses if you implement OnPreviewGUI.
-     */
-    static HasPreviewGUI() {}
-
-    /**
-     * Implement this function to make a custom inspector.
-     */
-    static OnInspectorGUI() {}
-
-    /**
-     * Implement to create your own interactive custom preview. Interactive custom previews are used in the preview area of the inspector and the object selector.
-     */
-    static OnInteractivePreviewGUI() {}
-
-    /**
-     * Implement to create your own custom preview for the preview area of the inspector, primary editor headers and the object selector.
-     */
-    static OnPreviewGUI() {}
-
-    /**
-     * Override this method if you want to show custom controls in the preview header.
-     */
-    static OnPreviewSettings() {}
-
-    /**
-     * Override this method if you want to render a static preview that shows.
-     */
-    static RenderStaticPreview() {}
-
-    /**
-     * Repaint any inspectors that shows this editor.
-     */
-    static Repaint() {}
-
-    /**
-     * Does this edit require to be repainted constantly in its current state?
-     */
-    static RequiresConstantRepaint() {}
-
-    /**
-     * Override this method in subclasses to return false if you don&#039;t want default margins.
-     */
-    static UseDefaultMargins() {}
+    static CreateInstance() {}
 
 
     /**

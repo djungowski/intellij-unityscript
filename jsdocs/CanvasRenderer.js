@@ -1,206 +1,49 @@
 class CanvasRenderer {
 
     /**
-     * Remove all cached vertices.
+     * Take the Vertex steam and split it corrisponding arrays (positions, colors, uv0s, uv1s, normals and tangents).
      */
-    static Clear() {}
+    static AddUIVertexStream() {}
 
     /**
-     * Disables rectangle clipping for this CanvasRenderer.
+     * Convert a set of vertex components into a stream of UIVertex.
      */
-    static DisableRectClipping() {}
+    static CreateUIVertexStream() {}
 
     /**
-     * Enables rect clipping on the CanvasRendered. Geometry outside of the specified rect will be clipped (not rendered).
+     * Given a list of UIVertex, split the stream into it&#039;s component types.
      */
-    static EnableRectClipping() {}
+    static SplitUIVertexStreams() {}
 
     /**
-     * Get the current alpha of the renderer.
+     * Removes a gameobject, component or asset.
      */
-    static GetAlpha() {}
+    static Destroy() {}
 
     /**
-     * Get the current color of the renderer.
+     * Destroys the object obj immediately.
      */
-    static GetColor() {}
+    static DestroyImmediate() {}
 
     /**
-     * Gets the current Material assigned to the CanvasRenderer.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetMaterial() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Gets the current Material assigned to the CanvasRenderer. Used internally for masking.
+     * Returns the first active loaded object of Type type.
      */
-    static GetPopMaterial() {}
+    static FindObjectOfType() {}
 
     /**
-     * Set the alpha of the renderer. Will be multiplied with the UIVertex alpha and the Canvas alpha.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static SetAlpha() {}
+    static FindObjectsOfType() {}
 
     /**
-     * The Alpha Texture that will be passed to the Shader under the _AlphaTex property.
+     * Clones the object original and returns the clone.
      */
-    static SetAlphaTexture() {}
-
-    /**
-     * Set the color of the renderer. Will be multiplied with the UIVertex color and the Canvas color.
-     */
-    static SetColor() {}
-
-    /**
-     * Set the material for the canvas renderer. If a texture is specified then it will be used as the &#039;MainTex&#039; instead of the material&#039;s &#039;MainTex&#039;.
-See Also: CanvasRenderer.SetMaterialCount, CanvasRenderer.SetTexture.
-     */
-    static SetMaterial() {}
-
-    /**
-     * Sets the Mesh used by this renderer.
-     */
-    static SetMesh() {}
-
-    /**
-     * Set the material for the canvas renderer. Used internally for masking.
-     */
-    static SetPopMaterial() {}
-
-    /**
-     * Sets the texture used by this renderer&#039;s material.
-     */
-    static SetTexture() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Remove all cached vertices.
-     */
-    static Clear() {}
-
-    /**
-     * Disables rectangle clipping for this CanvasRenderer.
-     */
-    static DisableRectClipping() {}
-
-    /**
-     * Enables rect clipping on the CanvasRendered. Geometry outside of the specified rect will be clipped (not rendered).
-     */
-    static EnableRectClipping() {}
-
-    /**
-     * Get the current alpha of the renderer.
-     */
-    static GetAlpha() {}
-
-    /**
-     * Get the current color of the renderer.
-     */
-    static GetColor() {}
-
-    /**
-     * Gets the current Material assigned to the CanvasRenderer.
-     */
-    static GetMaterial() {}
-
-    /**
-     * Gets the current Material assigned to the CanvasRenderer. Used internally for masking.
-     */
-    static GetPopMaterial() {}
-
-    /**
-     * Set the alpha of the renderer. Will be multiplied with the UIVertex alpha and the Canvas alpha.
-     */
-    static SetAlpha() {}
-
-    /**
-     * The Alpha Texture that will be passed to the Shader under the _AlphaTex property.
-     */
-    static SetAlphaTexture() {}
-
-    /**
-     * Set the color of the renderer. Will be multiplied with the UIVertex color and the Canvas color.
-     */
-    static SetColor() {}
-
-    /**
-     * Set the material for the canvas renderer. If a texture is specified then it will be used as the &#039;MainTex&#039; instead of the material&#039;s &#039;MainTex&#039;.
-See Also: CanvasRenderer.SetMaterialCount, CanvasRenderer.SetTexture.
-     */
-    static SetMaterial() {}
-
-    /**
-     * Sets the Mesh used by this renderer.
-     */
-    static SetMesh() {}
-
-    /**
-     * Set the material for the canvas renderer. Used internally for masking.
-     */
-    static SetPopMaterial() {}
-
-    /**
-     * Sets the texture used by this renderer&#039;s material.
-     */
-    static SetTexture() {}
+    static Instantiate() {}
 
 
     /**

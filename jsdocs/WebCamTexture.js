@@ -11,49 +11,39 @@ class WebCamTexture {
 
 
     /**
-     * Returns pixel color at coordinates (x, y).
+     * Removes a gameobject, component or asset.
      */
-    static GetPixel() {}
+    static Destroy() {}
 
     /**
-     * Get a block of pixel colors.
+     * Destroys the object obj immediately.
      */
-    static GetPixels() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns the pixels data in raw format.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetPixels32() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Pauses the camera.
+     * Returns the first active loaded object of Type type.
      */
-    static Pause() {}
+    static FindObjectOfType() {}
 
     /**
-     * Starts the camera.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static Play() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Stops the camera.
+     * Clones the object original and returns the clone.
      */
-    static Stop() {}
+    static Instantiate() {}
 
     /**
-     * Returns the instance id of the object.
+     * Sets Anisotropic limits.
      */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Retrieve a native (underlying graphics API) pointer to the texture resource.
-     */
-    static GetNativeTexturePtr() {}
+    static SetGlobalAnisotropicFilteringLimits() {}
 
 
     /**

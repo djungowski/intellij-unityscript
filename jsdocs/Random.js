@@ -70,6 +70,21 @@ class Random {
     static set value(value) {}
 
 
+    /**
+     * Generates a random color from HSV and alpha ranges.
+     */
+    static ColorHSV() {}
+
+    /**
+     * Initializes the random number generator state with a seed.
+     */
+    static InitState() {}
+
+    /**
+     * Returns a random float number between and min [inclusive] and max [inclusive] (Read Only).
+     */
+    static Range() {}
+
 
 
 }

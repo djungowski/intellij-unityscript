@@ -1,34 +1,39 @@
 class SparseTexture {
 
     /**
-     * Unload sparse texture tile.
+     * Removes a gameobject, component or asset.
      */
-    static UnloadTile() {}
+    static Destroy() {}
 
     /**
-     * Update sparse texture tile with color values.
+     * Destroys the object obj immediately.
      */
-    static UpdateTile() {}
+    static DestroyImmediate() {}
 
     /**
-     * Update sparse texture tile with raw pixel values.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static UpdateTileRaw() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns the instance id of the object.
+     * Returns the first active loaded object of Type type.
      */
-    static GetInstanceID() {}
+    static FindObjectOfType() {}
 
     /**
-     * Returns the name of the game object.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static ToString() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Retrieve a native (underlying graphics API) pointer to the texture resource.
+     * Clones the object original and returns the clone.
      */
-    static GetNativeTexturePtr() {}
+    static Instantiate() {}
+
+    /**
+     * Sets Anisotropic limits.
+     */
+    static SetGlobalAnisotropicFilteringLimits() {}
 
 
     /**

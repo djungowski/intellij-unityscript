@@ -1,69 +1,39 @@
 class TextureImporter {
 
     /**
-     * Clear specific target platform settings.
+     * Retrieves the asset importer for the asset at path.
      */
-    static ClearPlatformTextureSettings() {}
+    static GetAtPath() {}
 
     /**
-     * Does textures source image have alpha channel.
+     * Removes a gameobject, component or asset.
      */
-    static DoesSourceTextureHaveAlpha() {}
+    static Destroy() {}
 
     /**
-     * TODO.
+     * Destroys the object obj immediately.
      */
-    static GetAutomaticFormat() {}
+    static DestroyImmediate() {}
 
     /**
-     * Get the default platform specific texture settings.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetDefaultPlatformTextureSettings() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Get platform specific texture settings.
+     * Returns the first active loaded object of Type type.
      */
-    static GetPlatformTextureSettings() {}
+    static FindObjectOfType() {}
 
     /**
-     * Reads the active texture output instructions of this TextureImporter.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static ReadTextureImportInstructions() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Read texture settings into TextureImporterSettings class.
+     * Clones the object original and returns the clone.
      */
-    static ReadTextureSettings() {}
-
-    /**
-     * Set specific target platform settings.
-     */
-    static SetPlatformTextureSettings() {}
-
-    /**
-     * Set texture importers settings from TextureImporterSettings class.
-     */
-    static SetTextureSettings() {}
-
-    /**
-     * Save asset importer settings if asset importer is dirty.
-     */
-    static SaveAndReimport() {}
-
-    /**
-     * Set the AssetBundle name and variant.
-     */
-    static SetAssetBundleNameAndVariant() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

@@ -40,6 +40,31 @@ class DragAndDrop {
     static set visualMode(value) {}
 
 
+    /**
+     * Accept a drag operation.
+     */
+    static AcceptDrag() {}
+
+    /**
+     * Get data associated with current drag and drop operation.
+     */
+    static GetGenericData() {}
+
+    /**
+     * Clears drag &amp; drop data.
+     */
+    static PrepareStartDrag() {}
+
+    /**
+     * Set data associated with current drag and drop operation.
+     */
+    static SetGenericData() {}
+
+    /**
+     * Start a drag operation.
+     */
+    static StartDrag() {}
+
 
 
 }

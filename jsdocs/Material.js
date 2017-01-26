@@ -1,194 +1,34 @@
 class Material {
 
     /**
-     * Copy properties from other material into this material.
+     * Removes a gameobject, component or asset.
      */
-    static CopyPropertiesFromMaterial() {}
+    static Destroy() {}
 
     /**
-     * Unset a shader keyword.
+     * Destroys the object obj immediately.
      */
-    static DisableKeyword() {}
+    static DestroyImmediate() {}
 
     /**
-     * Set a shader keyword that is enabled by this material.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static EnableKeyword() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns the index of the pass passName.
+     * Returns the first active loaded object of Type type.
      */
-    static FindPass() {}
+    static FindObjectOfType() {}
 
     /**
-     * Get a named color value.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetColor() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Get a named color array.
+     * Clones the object original and returns the clone.
      */
-    static GetColorArray() {}
-
-    /**
-     * Get a named float value.
-     */
-    static GetFloat() {}
-
-    /**
-     * Get a named float array.
-     */
-    static GetFloatArray() {}
-
-    /**
-     * Get a named integer value.
-     */
-    static GetInt() {}
-
-    /**
-     * Get a named matrix value from the shader.
-     */
-    static GetMatrix() {}
-
-    /**
-     * Get a named matrix array.
-     */
-    static GetMatrixArray() {}
-
-    /**
-     * Returns the name of the shader pass at index pass.
-     */
-    static GetPassName() {}
-
-    /**
-     * Get the value of material&#039;s shader tag.
-     */
-    static GetTag() {}
-
-    /**
-     * Get a named texture.
-     */
-    static GetTexture() {}
-
-    /**
-     * Gets the placement offset of texture propertyName.
-     */
-    static GetTextureOffset() {}
-
-    /**
-     * Gets the placement scale of texture propertyName.
-     */
-    static GetTextureScale() {}
-
-    /**
-     * Get a named vector value.
-     */
-    static GetVector() {}
-
-    /**
-     * Get a named vector array.
-     */
-    static GetVectorArray() {}
-
-    /**
-     * Checks if material&#039;s shader has a property of a given name.
-     */
-    static HasProperty() {}
-
-    /**
-     * Is the shader keyword enabled on this material?
-     */
-    static IsKeywordEnabled() {}
-
-    /**
-     * Interpolate properties between two materials.
-     */
-    static Lerp() {}
-
-    /**
-     * Set a ComputeBuffer value.
-     */
-    static SetBuffer() {}
-
-    /**
-     * Set a named color value.
-     */
-    static SetColor() {}
-
-    /**
-     * Set a color array property.
-     */
-    static SetColorArray() {}
-
-    /**
-     * Set a named float value.
-     */
-    static SetFloat() {}
-
-    /**
-     * Set a float array property.
-     */
-    static SetFloatArray() {}
-
-    /**
-     * Set a named integer value.
-     */
-    static SetInt() {}
-
-    /**
-     * Set a named matrix for the shader.
-     */
-    static SetMatrix() {}
-
-    /**
-     * Set a matrix array property.
-     */
-    static SetMatrixArray() {}
-
-    /**
-     * Sets an override tag/value on the material.
-     */
-    static SetOverrideTag() {}
-
-    /**
-     * Activate the given pass for rendering.
-     */
-    static SetPass() {}
-
-    /**
-     * Set a named texture.
-     */
-    static SetTexture() {}
-
-    /**
-     * Sets the placement offset of texture propertyName.
-     */
-    static SetTextureOffset() {}
-
-    /**
-     * Sets the placement scale of texture propertyName.
-     */
-    static SetTextureScale() {}
-
-    /**
-     * Set a named vector value.
-     */
-    static SetVector() {}
-
-    /**
-     * Set a vector array property.
-     */
-    static SetVectorArray() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

@@ -40,6 +40,21 @@ class AudioSettings {
     static set speakerMode(value) {}
 
 
+    /**
+     * Returns the current configuration of the audio device and system. The values in the struct may then be modified and reapplied via AudioSettings.Reset.
+     */
+    static GetConfiguration() {}
+
+    /**
+     * Get the mixer&#039;s buffer size in samples.
+     */
+    static GetDSPBufferSize() {}
+
+    /**
+     * Performs a change of the device configuration. In response to this the AudioSettings.OnAudioConfigurationChanged delegate is invoked with the argument deviceWasChanged=false. It cannot be guaranteed that the exact settings specified can be used, but the an attempt is made to use the closest match supported by the system.
+     */
+    static Reset() {}
+
 
 
 }

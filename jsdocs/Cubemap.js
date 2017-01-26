@@ -1,49 +1,39 @@
 class Cubemap {
 
     /**
-     * Actually apply all previous SetPixel and SetPixels changes.
+     * Removes a gameobject, component or asset.
      */
-    static Apply() {}
+    static Destroy() {}
 
     /**
-     * Returns pixel color at coordinates (face, x, y).
+     * Destroys the object obj immediately.
      */
-    static GetPixel() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns pixel colors of a cubemap face.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetPixels() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Sets pixel color at coordinates (face, x, y).
+     * Returns the first active loaded object of Type type.
      */
-    static SetPixel() {}
+    static FindObjectOfType() {}
 
     /**
-     * Sets pixel colors of a cubemap face.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static SetPixels() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Performs smoothing of near edge regions.
+     * Clones the object original and returns the clone.
      */
-    static SmoothEdges() {}
+    static Instantiate() {}
 
     /**
-     * Returns the instance id of the object.
+     * Sets Anisotropic limits.
      */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Retrieve a native (underlying graphics API) pointer to the texture resource.
-     */
-    static GetNativeTexturePtr() {}
+    static SetGlobalAnisotropicFilteringLimits() {}
 
 
     /**

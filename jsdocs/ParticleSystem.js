@@ -1,119 +1,34 @@
 class ParticleSystem {
 
     /**
-     * Remove all particles in the particle system.
+     * Removes a gameobject, component or asset.
      */
-    static Clear() {}
+    static Destroy() {}
 
     /**
-     * Emit count particles immediately.
+     * Destroys the object obj immediately.
      */
-    static Emit() {}
+    static DestroyImmediate() {}
 
     /**
-     * Get a stream of custom per-particle data.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetCustomParticleData() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Get the particles of this particle system.
+     * Returns the first active loaded object of Type type.
      */
-    static GetParticles() {}
+    static FindObjectOfType() {}
 
     /**
-     * Does the system have any live particles (or will produce more)?
+     * Returns a list of all active loaded objects of Type type.
      */
-    static IsAlive() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Pauses the system so no new particles are emitted and the existing particles are not updated.
+     * Clones the object original and returns the clone.
      */
-    static Pause() {}
-
-    /**
-     * Starts the particle system.
-     */
-    static Play() {}
-
-    /**
-     * Set a stream of custom per-particle data.
-     */
-    static SetCustomParticleData() {}
-
-    /**
-     * Set the particles of this particle system. size is the number of particles that is set.
-     */
-    static SetParticles() {}
-
-    /**
-     * Fastforwards the particle system by simulating particles over given period of time, then pauses it.
-     */
-    static Simulate() {}
-
-    /**
-     * Stops playing the particle system using the supplied stop behaviour.
-     */
-    static Stop() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

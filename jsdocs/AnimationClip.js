@@ -1,39 +1,34 @@
 class AnimationClip {
 
     /**
-     * Adds an animation event to the clip.
+     * Removes a gameobject, component or asset.
      */
-    static AddEvent() {}
+    static Destroy() {}
 
     /**
-     * Clears all curves from the clip.
+     * Destroys the object obj immediately.
      */
-    static ClearCurves() {}
+    static DestroyImmediate() {}
 
     /**
-     * Realigns quaternion keys to ensure shortest interpolation paths.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static EnsureQuaternionContinuity() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Samples an animation at a given time for any animated properties.
+     * Returns the first active loaded object of Type type.
      */
-    static SampleAnimation() {}
+    static FindObjectOfType() {}
 
     /**
-     * Assigns the curve to animate a specific property.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static SetCurve() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns the instance id of the object.
+     * Clones the object original and returns the clone.
      */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

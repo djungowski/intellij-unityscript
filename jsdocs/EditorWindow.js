@@ -21,144 +21,54 @@ class EditorWindow {
 
 
     /**
-     * Mark the beginning area of all popup windows.
+     * Focuses the first found EditorWindow of specified type if it is open.
      */
-    static BeginWindows() {}
+    static FocusWindowIfItsOpen() {}
 
     /**
-     * Close the editor window.
+     * Returns the first EditorWindow of type t which is currently on the screen.
      */
-    static Close() {}
+    static GetWindow() {}
 
     /**
-     * Close a window group started with EditorWindow.BeginWindows.
+     * Returns the first EditorWindow of type t which is currently on the screen.
      */
-    static EndWindows() {}
+    static GetWindowWithRect() {}
 
     /**
-     * Moves keyboard focus to this EditorWindow.
+     * Removes a gameobject, component or asset.
      */
-    static Focus() {}
+    static Destroy() {}
 
     /**
-     * Stop showing notification message.
+     * Destroys the object obj immediately.
      */
-    static RemoveNotification() {}
+    static DestroyImmediate() {}
 
     /**
-     * Make the window repaint.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static Repaint() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Sends an Event to a window.
+     * Returns the first active loaded object of Type type.
      */
-    static SendEvent() {}
+    static FindObjectOfType() {}
 
     /**
-     * Show the EditorWindow.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static Show() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Shows a window with dropdown behaviour and styling.
+     * Clones the object original and returns the clone.
      */
-    static ShowAsDropDown() {}
+    static Instantiate() {}
 
     /**
-     * Show the editor window in the auxiliary window.
+     * Creates an instance of a scriptable object.
      */
-    static ShowAuxWindow() {}
-
-    /**
-     * Show a notification message.
-     */
-    static ShowNotification() {}
-
-    /**
-     * Shows an Editor window using popup-style framing.
-     */
-    static ShowPopup() {}
-
-    /**
-     * Show the EditorWindow as a floating utility window.
-     */
-    static ShowUtility() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Mark the beginning area of all popup windows.
-     */
-    static BeginWindows() {}
-
-    /**
-     * Close the editor window.
-     */
-    static Close() {}
-
-    /**
-     * Close a window group started with EditorWindow.BeginWindows.
-     */
-    static EndWindows() {}
-
-    /**
-     * Moves keyboard focus to this EditorWindow.
-     */
-    static Focus() {}
-
-    /**
-     * Stop showing notification message.
-     */
-    static RemoveNotification() {}
-
-    /**
-     * Make the window repaint.
-     */
-    static Repaint() {}
-
-    /**
-     * Sends an Event to a window.
-     */
-    static SendEvent() {}
-
-    /**
-     * Show the EditorWindow.
-     */
-    static Show() {}
-
-    /**
-     * Shows a window with dropdown behaviour and styling.
-     */
-    static ShowAsDropDown() {}
-
-    /**
-     * Show the editor window in the auxiliary window.
-     */
-    static ShowAuxWindow() {}
-
-    /**
-     * Show a notification message.
-     */
-    static ShowNotification() {}
-
-    /**
-     * Shows an Editor window using popup-style framing.
-     */
-    static ShowPopup() {}
-
-    /**
-     * Show the EditorWindow as a floating utility window.
-     */
-    static ShowUtility() {}
+    static CreateInstance() {}
 
 
     /**

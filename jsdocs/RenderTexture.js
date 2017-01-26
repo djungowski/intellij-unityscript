@@ -11,99 +11,54 @@ class RenderTexture {
 
 
     /**
-     * Actually creates the RenderTexture.
+     * Allocate a temporary render texture.
      */
-    static Create() {}
+    static GetTemporary() {}
 
     /**
-     * Discards the contents of the RenderTexture.
+     * Release a temporary texture allocated with GetTemporary.
      */
-    static DiscardContents() {}
+    static ReleaseTemporary() {}
 
     /**
-     * Generate mipmap levels of a render texture.
+     * Does a RenderTexture have stencil buffer?
      */
-    static GenerateMips() {}
+    static SupportsStencil() {}
 
     /**
-     * Retrieve a native (underlying graphics API) pointer to the depth buffer resource.
+     * Removes a gameobject, component or asset.
      */
-    static GetNativeDepthBufferPtr() {}
+    static Destroy() {}
 
     /**
-     * Is the render texture actually created?
+     * Destroys the object obj immediately.
      */
-    static IsCreated() {}
+    static DestroyImmediate() {}
 
     /**
-     * Indicate that there&#039;s a RenderTexture restore operation expected.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static MarkRestoreExpected() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Releases the RenderTexture.
+     * Returns the first active loaded object of Type type.
      */
-    static Release() {}
+    static FindObjectOfType() {}
 
     /**
-     * Assigns this RenderTexture as a global shader property named propertyName.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static SetGlobalShaderProperty() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns the instance id of the object.
+     * Clones the object original and returns the clone.
      */
-    static GetInstanceID() {}
+    static Instantiate() {}
 
     /**
-     * Returns the name of the game object.
+     * Sets Anisotropic limits.
      */
-    static ToString() {}
-
-    /**
-     * Retrieve a native (underlying graphics API) pointer to the texture resource.
-     */
-    static GetNativeTexturePtr() {}
-
-    /**
-     * Actually creates the RenderTexture.
-     */
-    static Create() {}
-
-    /**
-     * Discards the contents of the RenderTexture.
-     */
-    static DiscardContents() {}
-
-    /**
-     * Generate mipmap levels of a render texture.
-     */
-    static GenerateMips() {}
-
-    /**
-     * Retrieve a native (underlying graphics API) pointer to the depth buffer resource.
-     */
-    static GetNativeDepthBufferPtr() {}
-
-    /**
-     * Is the render texture actually created?
-     */
-    static IsCreated() {}
-
-    /**
-     * Indicate that there&#039;s a RenderTexture restore operation expected.
-     */
-    static MarkRestoreExpected() {}
-
-    /**
-     * Releases the RenderTexture.
-     */
-    static Release() {}
-
-    /**
-     * Assigns this RenderTexture as a global shader property named propertyName.
-     */
-    static SetGlobalShaderProperty() {}
+    static SetGlobalAnisotropicFilteringLimits() {}
 
 
     /**

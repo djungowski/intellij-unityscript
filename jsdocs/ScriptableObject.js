@@ -1,14 +1,39 @@
 class ScriptableObject {
 
     /**
-     * Returns the instance id of the object.
+     * Creates an instance of a scriptable object.
      */
-    static GetInstanceID() {}
+    static CreateInstance() {}
 
     /**
-     * Returns the name of the game object.
+     * Removes a gameobject, component or asset.
      */
-    static ToString() {}
+    static Destroy() {}
+
+    /**
+     * Destroys the object obj immediately.
+     */
+    static DestroyImmediate() {}
+
+    /**
+     * Makes the object target not be destroyed automatically when loading a new scene.
+     */
+    static DontDestroyOnLoad() {}
+
+    /**
+     * Returns the first active loaded object of Type type.
+     */
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
 
 
     /**

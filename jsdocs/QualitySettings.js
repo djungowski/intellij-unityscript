@@ -273,14 +273,54 @@ frame. Minimum value is 1 and maximum is 33.
 
 
     /**
-     * Returns the instance id of the object.
+     * Decrease the current quality level.
      */
-    static GetInstanceID() {}
+    static DecreaseLevel() {}
 
     /**
-     * Returns the name of the game object.
+     * Returns the current graphics quality level.
      */
-    static ToString() {}
+    static GetQualityLevel() {}
+
+    /**
+     * Increase the current quality level.
+     */
+    static IncreaseLevel() {}
+
+    /**
+     * Sets a new graphics quality level.
+     */
+    static SetQualityLevel() {}
+
+    /**
+     * Removes a gameobject, component or asset.
+     */
+    static Destroy() {}
+
+    /**
+     * Destroys the object obj immediately.
+     */
+    static DestroyImmediate() {}
+
+    /**
+     * Makes the object target not be destroyed automatically when loading a new scene.
+     */
+    static DontDestroyOnLoad() {}
+
+    /**
+     * Returns the first active loaded object of Type type.
+     */
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
 
 
     /**

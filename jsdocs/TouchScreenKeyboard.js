@@ -40,6 +40,11 @@ class TouchScreenKeyboard {
     static set visible(value) {}
 
 
+    /**
+     * Opens the native keyboard provided by OS on the screen.
+     */
+    static Open() {}
+
 
     /**
      * Is the keyboard visible or sliding into the position on the screen?

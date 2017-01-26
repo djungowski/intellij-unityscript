@@ -1,134 +1,54 @@
 class GameObject {
 
     /**
-     * Adds a component class named className to the game object.
+     * Creates a game object with a primitive mesh renderer and appropriate collider.
      */
-    static AddComponent() {}
+    static CreatePrimitive() {}
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+     * Finds a GameObject by name and returns it.
      */
-    static BroadcastMessage() {}
+    static Find() {}
 
     /**
-     * Is this game object tagged with tag ?
+     * Returns a list of active GameObjects tagged tag. Returns empty array if no GameObject was found.
      */
-    static CompareTag() {}
+    static FindGameObjectsWithTag() {}
 
     /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
+     * Returns one active GameObject tagged tag. Returns null if no GameObject was found.
      */
-    static GetComponent() {}
+    static FindWithTag() {}
 
     /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
+     * Removes a gameobject, component or asset.
      */
-    static GetComponentInChildren() {}
+    static Destroy() {}
 
     /**
-     * Returns the component of Type type in the GameObject or any of its parents.
+     * Destroys the object obj immediately.
      */
-    static GetComponentInParent() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns all components of Type type in the GameObject.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetComponents() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns all components of Type type in the GameObject or any of its children.
+     * Returns the first active loaded object of Type type.
      */
-    static GetComponentsInChildren() {}
+    static FindObjectOfType() {}
 
     /**
-     * Returns all components of Type type in the GameObject or any of its parents.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetComponentsInParent() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
+     * Clones the object original and returns the clone.
      */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Activates/Deactivates the GameObject.
-     */
-    static SetActive() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Adds a component class named className to the game object.
-     */
-    static AddComponent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Activates/Deactivates the GameObject.
-     */
-    static SetActive() {}
+    static Instantiate() {}
 
 
     /**

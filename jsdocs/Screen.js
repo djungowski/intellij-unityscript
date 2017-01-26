@@ -120,6 +120,11 @@ class Screen {
     static set width(value) {}
 
 
+    /**
+     * Switches the screen resolution.
+     */
+    static SetResolution() {}
+
 
 
 }

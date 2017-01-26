@@ -21,79 +21,59 @@ class PopupWindow {
 
 
     /**
-     * Mark the beginning area of all popup windows.
-     */
-    static BeginWindows() {}
-
-    /**
-     * Close the editor window.
-     */
-    static Close() {}
-
-    /**
-     * Close a window group started with EditorWindow.BeginWindows.
-     */
-    static EndWindows() {}
-
-    /**
-     * Moves keyboard focus to this EditorWindow.
-     */
-    static Focus() {}
-
-    /**
-     * Stop showing notification message.
-     */
-    static RemoveNotification() {}
-
-    /**
-     * Make the window repaint.
-     */
-    static Repaint() {}
-
-    /**
-     * Sends an Event to a window.
-     */
-    static SendEvent() {}
-
-    /**
-     * Show the EditorWindow.
+     * Show a popup with the given PopupWindowContent.
      */
     static Show() {}
 
     /**
-     * Shows a window with dropdown behaviour and styling.
+     * Focuses the first found EditorWindow of specified type if it is open.
      */
-    static ShowAsDropDown() {}
+    static FocusWindowIfItsOpen() {}
 
     /**
-     * Show the editor window in the auxiliary window.
+     * Returns the first EditorWindow of type t which is currently on the screen.
      */
-    static ShowAuxWindow() {}
+    static GetWindow() {}
 
     /**
-     * Show a notification message.
+     * Returns the first EditorWindow of type t which is currently on the screen.
      */
-    static ShowNotification() {}
+    static GetWindowWithRect() {}
 
     /**
-     * Shows an Editor window using popup-style framing.
+     * Removes a gameobject, component or asset.
      */
-    static ShowPopup() {}
+    static Destroy() {}
 
     /**
-     * Show the EditorWindow as a floating utility window.
+     * Destroys the object obj immediately.
      */
-    static ShowUtility() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns the instance id of the object.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetInstanceID() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns the name of the game object.
+     * Returns the first active loaded object of Type type.
      */
-    static ToString() {}
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
+
+    /**
+     * Creates an instance of a scriptable object.
+     */
+    static CreateInstance() {}
 
 
     /**

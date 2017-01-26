@@ -260,6 +260,86 @@ class Input {
     static set touchSupported(value) {}
 
 
+    /**
+     * Returns specific acceleration measurement which occurred during last frame. (Does not allocate temporary variables).
+     */
+    static GetAccelerationEvent() {}
+
+    /**
+     * Returns the value of the virtual axis identified by axisName.
+     */
+    static GetAxis() {}
+
+    /**
+     * Returns the value of the virtual axis identified by axisName with no smoothing filtering applied.
+     */
+    static GetAxisRaw() {}
+
+    /**
+     * Returns true while the virtual button identified by buttonName is held down.
+     */
+    static GetButton() {}
+
+    /**
+     * Returns true during the frame the user pressed down the virtual button identified by buttonName.
+     */
+    static GetButtonDown() {}
+
+    /**
+     * Returns true the first frame the user releases the virtual button identified by buttonName.
+     */
+    static GetButtonUp() {}
+
+    /**
+     * Returns an array of strings describing the connected joysticks.
+     */
+    static GetJoystickNames() {}
+
+    /**
+     * Returns true while the user holds down the key identified by name. Think auto fire.
+     */
+    static GetKey() {}
+
+    /**
+     * Returns true during the frame the user starts pressing down the key identified by name.
+     */
+    static GetKeyDown() {}
+
+    /**
+     * Returns true during the frame the user releases the key identified by name.
+     */
+    static GetKeyUp() {}
+
+    /**
+     * Returns whether the given mouse button is held down.
+     */
+    static GetMouseButton() {}
+
+    /**
+     * Returns true during the frame the user pressed the given mouse button.
+     */
+    static GetMouseButtonDown() {}
+
+    /**
+     * Returns true during the frame the user releases the given mouse button.
+     */
+    static GetMouseButtonUp() {}
+
+    /**
+     * Returns object representing status of a specific touch. (Does not allocate temporary variables).
+     */
+    static GetTouch() {}
+
+    /**
+     * Determine whether a particular joystick model has been preconfigured by Unity. (Linux-only).
+     */
+    static IsJoystickPreconfigured() {}
+
+    /**
+     * Resets all input. After ResetInputAxes all axes return to 0 and all buttons return to 0 for one frame.
+     */
+    static ResetInputAxes() {}
+
 
 
 }

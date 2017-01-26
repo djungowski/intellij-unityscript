@@ -1,39 +1,39 @@
 class SketchUpImporter {
 
     /**
-     * The default camera or the camera of the active scene which the SketchUp file was saved with.
+     * Retrieves the asset importer for the asset at path.
      */
-    static GetDefaultCamera() {}
+    static GetAtPath() {}
 
     /**
-     * The method returns an array of SketchUpImportScene which represents SketchUp scenes.
+     * Removes a gameobject, component or asset.
      */
-    static GetScenes() {}
+    static Destroy() {}
 
     /**
-     * Save asset importer settings if asset importer is dirty.
+     * Destroys the object obj immediately.
      */
-    static SaveAndReimport() {}
+    static DestroyImmediate() {}
 
     /**
-     * Set the AssetBundle name and variant.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static SetAssetBundleNameAndVariant() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Creates a mask that matches the model hierarchy, and applies it to the provided ModelImporterClipAnimation.
+     * Returns the first active loaded object of Type type.
      */
-    static CreateDefaultMaskForClip() {}
+    static FindObjectOfType() {}
 
     /**
-     * Returns the instance id of the object.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetInstanceID() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns the name of the game object.
+     * Clones the object original and returns the clone.
      */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

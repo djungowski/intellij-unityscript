@@ -21,154 +21,39 @@ class Terrain {
 
 
     /**
-     * Adds a tree instance to the terrain.
+     * Creates a Terrain including collider from TerrainData.
      */
-    static AddTreeInstance() {}
+    static CreateTerrainGameObject() {}
 
     /**
-     * Update the terrain&#039;s LOD and vegetation information after making changes with TerrainData.SetHeightsDelayLOD.
+     * Removes a gameobject, component or asset.
      */
-    static ApplyDelayedHeightmapModification() {}
+    static Destroy() {}
 
     /**
-     * Flushes any change done in the terrain so it takes effect.
+     * Destroys the object obj immediately.
      */
-    static Flush() {}
+    static DestroyImmediate() {}
 
     /**
-     * Fills the list with reflection probes whose AABB intersects with terrain&#039;s AABB. Their weights are also provided. Weight shows how much influence the probe has on the terrain, and is used when the blending between multiple reflection probes occurs.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetClosestReflectionProbes() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Get the position of the terrain.
+     * Returns the first active loaded object of Type type.
      */
-    static GetPosition() {}
+    static FindObjectOfType() {}
 
     /**
-     * Get the previously set splat material properties by copying to the dest MaterialPropertyBlock object.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetSplatMaterialPropertyBlock() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Samples the height at the given position defined in world space, relative to the terrain space.
+     * Clones the object original and returns the clone.
      */
-    static SampleHeight() {}
-
-    /**
-     * Lets you setup the connection between neighboring Terrains.
-     */
-    static SetNeighbors() {}
-
-    /**
-     * Set the additional material properties when rendering the terrain heightmap using the splat material.
-     */
-    static SetSplatMaterialPropertyBlock() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Adds a tree instance to the terrain.
-     */
-    static AddTreeInstance() {}
-
-    /**
-     * Update the terrain&#039;s LOD and vegetation information after making changes with TerrainData.SetHeightsDelayLOD.
-     */
-    static ApplyDelayedHeightmapModification() {}
-
-    /**
-     * Flushes any change done in the terrain so it takes effect.
-     */
-    static Flush() {}
-
-    /**
-     * Fills the list with reflection probes whose AABB intersects with terrain&#039;s AABB. Their weights are also provided. Weight shows how much influence the probe has on the terrain, and is used when the blending between multiple reflection probes occurs.
-     */
-    static GetClosestReflectionProbes() {}
-
-    /**
-     * Get the position of the terrain.
-     */
-    static GetPosition() {}
-
-    /**
-     * Get the previously set splat material properties by copying to the dest MaterialPropertyBlock object.
-     */
-    static GetSplatMaterialPropertyBlock() {}
-
-    /**
-     * Samples the height at the given position defined in world space, relative to the terrain space.
-     */
-    static SampleHeight() {}
-
-    /**
-     * Lets you setup the connection between neighboring Terrains.
-     */
-    static SetNeighbors() {}
-
-    /**
-     * Set the additional material properties when rendering the terrain heightmap using the splat material.
-     */
-    static SetSplatMaterialPropertyBlock() {}
+    static Instantiate() {}
 
 
     /**

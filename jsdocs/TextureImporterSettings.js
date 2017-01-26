@@ -1,14 +1,9 @@
 class TextureImporterSettings {
 
     /**
-     * Configure parameters to import a texture for a purpose of type, as described here.
+     * Test texture importer settings for equality.
      */
-    static ApplyTextureType() {}
-
-    /**
-     * Copy parameters into another TextureImporterSettings object.
-     */
-    static CopyTo() {}
+    static Equal() {}
 
 
     /**

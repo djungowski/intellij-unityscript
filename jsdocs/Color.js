@@ -111,9 +111,24 @@ class Color {
 
 
     /**
-     * Returns a nicely formatted string of this color.
+     * Creates an RGB colour from HSV input.
      */
-    static ToString() {}
+    static HSVToRGB() {}
+
+    /**
+     * Linearly interpolates between colors a and b by t.
+     */
+    static Lerp() {}
+
+    /**
+     * Linearly interpolates between colors a and b by t.
+     */
+    static LerpUnclamped() {}
+
+    /**
+     * Calculates the hue, saturation and value of an RGB input color.
+     */
+    static RGBToHSV() {}
 
 
     /**

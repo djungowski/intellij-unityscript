@@ -410,6 +410,16 @@ class SystemInfo {
     static set usesReversedZBuffer(value) {}
 
 
+    /**
+     * Is render texture format supported?
+     */
+    static SupportsRenderTextureFormat() {}
+
+    /**
+     * Is texture format supported on this device?
+     */
+    static SupportsTextureFormat() {}
+
 
 
 }

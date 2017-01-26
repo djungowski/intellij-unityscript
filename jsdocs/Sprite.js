@@ -1,24 +1,39 @@
 class Sprite {
 
     /**
-     * Sets up new Sprite geometry.
+     * Create a new Sprite object.
      */
-    static OverrideGeometry() {}
+    static Create() {}
 
     /**
-     * Returns the instance id of the object.
+     * Removes a gameobject, component or asset.
      */
-    static GetInstanceID() {}
+    static Destroy() {}
 
     /**
-     * Returns the name of the game object.
+     * Destroys the object obj immediately.
      */
-    static ToString() {}
+    static DestroyImmediate() {}
 
     /**
-     * Sets up new Sprite geometry.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static OverrideGeometry() {}
+    static DontDestroyOnLoad() {}
+
+    /**
+     * Returns the first active loaded object of Type type.
+     */
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
 
 
     /**

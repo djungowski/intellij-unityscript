@@ -21,79 +21,59 @@ class ScriptableWizard {
 
 
     /**
-     * Mark the beginning area of all popup windows.
+     * Creates a wizard.
      */
-    static BeginWindows() {}
+    static DisplayWizard() {}
 
     /**
-     * Close the editor window.
+     * Focuses the first found EditorWindow of specified type if it is open.
      */
-    static Close() {}
+    static FocusWindowIfItsOpen() {}
 
     /**
-     * Close a window group started with EditorWindow.BeginWindows.
+     * Returns the first EditorWindow of type t which is currently on the screen.
      */
-    static EndWindows() {}
+    static GetWindow() {}
 
     /**
-     * Moves keyboard focus to this EditorWindow.
+     * Returns the first EditorWindow of type t which is currently on the screen.
      */
-    static Focus() {}
+    static GetWindowWithRect() {}
 
     /**
-     * Stop showing notification message.
+     * Removes a gameobject, component or asset.
      */
-    static RemoveNotification() {}
+    static Destroy() {}
 
     /**
-     * Make the window repaint.
+     * Destroys the object obj immediately.
      */
-    static Repaint() {}
+    static DestroyImmediate() {}
 
     /**
-     * Sends an Event to a window.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static SendEvent() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Show the EditorWindow.
+     * Returns the first active loaded object of Type type.
      */
-    static Show() {}
+    static FindObjectOfType() {}
 
     /**
-     * Shows a window with dropdown behaviour and styling.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static ShowAsDropDown() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Show the editor window in the auxiliary window.
+     * Clones the object original and returns the clone.
      */
-    static ShowAuxWindow() {}
+    static Instantiate() {}
 
     /**
-     * Show a notification message.
+     * Creates an instance of a scriptable object.
      */
-    static ShowNotification() {}
-
-    /**
-     * Shows an Editor window using popup-style framing.
-     */
-    static ShowPopup() {}
-
-    /**
-     * Show the EditorWindow as a floating utility window.
-     */
-    static ShowUtility() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static CreateInstance() {}
 
 
     /**

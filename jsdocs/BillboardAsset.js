@@ -1,44 +1,34 @@
 class BillboardAsset {
 
     /**
-     * Get the array of billboard image texture coordinate data.
+     * Removes a gameobject, component or asset.
      */
-    static GetImageTexCoords() {}
+    static Destroy() {}
 
     /**
-     * Get the indices of the billboard mesh.
+     * Destroys the object obj immediately.
      */
-    static GetIndices() {}
+    static DestroyImmediate() {}
 
     /**
-     * Get the vertices of the billboard mesh.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetVertices() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Set the array of billboard image texture coordinate data.
+     * Returns the first active loaded object of Type type.
      */
-    static SetImageTexCoords() {}
+    static FindObjectOfType() {}
 
     /**
-     * Set the indices of the billboard mesh.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static SetIndices() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Set the vertices of the billboard mesh.
+     * Clones the object original and returns the clone.
      */
-    static SetVertices() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

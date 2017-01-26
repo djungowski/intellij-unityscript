@@ -1,39 +1,34 @@
 class ShaderVariantCollection {
 
     /**
-     * Adds a new shader variant to the collection.
+     * Removes a gameobject, component or asset.
      */
-    static Add() {}
+    static Destroy() {}
 
     /**
-     * Remove all shader variants from the collection.
+     * Destroys the object obj immediately.
      */
-    static Clear() {}
+    static DestroyImmediate() {}
 
     /**
-     * Checks if a shader variant is in the collection.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static Contains() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Adds shader variant from the collection.
+     * Returns the first active loaded object of Type type.
      */
-    static Remove() {}
+    static FindObjectOfType() {}
 
     /**
-     * Fully load shaders in ShaderVariantCollection.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static WarmUp() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns the instance id of the object.
+     * Clones the object original and returns the clone.
      */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

@@ -50,6 +50,11 @@ class SamsungTV {
     static set touchPadMode(value) {}
 
 
+    /**
+     * Set the system language that is returned by Application.SystemLanguage.
+     */
+    static SetSystemLanguage() {}
+
 
 
 }

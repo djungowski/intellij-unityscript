@@ -21,9 +21,9 @@ class CrashReport {
 
 
     /**
-     * Remove report from available reports list.
+     * Remove all reports from available reports list.
      */
-    static Remove() {}
+    static RemoveAll() {}
 
 
     /**

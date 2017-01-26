@@ -11,24 +11,19 @@ class Rect {
 
 
     /**
-     * Returns true if the x and y components of point is a point inside this rectangle. If allowInverse is present and true, the width and height of the Rect are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.
+     * Creates a rectangle from min/max coordinate values.
      */
-    static Contains() {}
+    static MinMaxRect() {}
 
     /**
-     * Returns true if the other rectangle overlaps this one. If allowInverse is present and true, the widths and heights of the Rects are allowed to take negative values (ie, the min value is greater than the max), and the test will still work.
+     * Returns a point inside a rectangle, given normalized coordinates.
      */
-    static Overlaps() {}
+    static NormalizedToPoint() {}
 
     /**
-     * Set components of an existing Rect.
+     * Returns the normalized coordinates cooresponding the the point.
      */
-    static Set() {}
-
-    /**
-     * Returns a nicely formatted string for this Rect.
-     */
-    static ToString() {}
+    static PointToNormalized() {}
 
 
     /**

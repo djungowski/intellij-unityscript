@@ -50,6 +50,36 @@ class HumanTrait {
     static set RequiredBoneCount(value) {}
 
 
+    /**
+     * Return the bone to which a particular muscle is connected.
+     */
+    static BoneFromMuscle() {}
+
+    /**
+     * Get the default maximum value of rotation for a muscle in degrees.
+     */
+    static GetMuscleDefaultMax() {}
+
+    /**
+     * Get the default minimum value of rotation for a muscle in degrees.
+     */
+    static GetMuscleDefaultMin() {}
+
+    /**
+     * Returns parent humanoid bone index of a bone.
+     */
+    static GetParentBone() {}
+
+    /**
+     * Obtain the muscle index for a particular bone index and &quot;degree of freedom&quot;.
+     */
+    static MuscleFromBone() {}
+
+    /**
+     * Is the bone a member of the minimal set of bones that Mecanim requires for a human model?
+     */
+    static RequiredBone() {}
+
 
 
 }

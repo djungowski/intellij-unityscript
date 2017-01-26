@@ -30,6 +30,26 @@ class StaticOcclusionCulling {
     static set umbraDataSize(value) {}
 
 
+    /**
+     * Used to cancel asynchronous generation of static occlusion culling data.
+     */
+    static Cancel() {}
+
+    /**
+     * Clears the PVS of the opened scene.
+     */
+    static Clear() {}
+
+    /**
+     * Used to generate static occlusion culling data.
+     */
+    static Compute() {}
+
+    /**
+     * Used to compute static occlusion culling data asynchronously.
+     */
+    static GenerateInBackground() {}
+
 
 
 }

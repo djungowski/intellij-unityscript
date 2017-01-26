@@ -300,6 +300,81 @@ class Application {
     static set version(value) {}
 
 
+    /**
+     * Cancels quitting the application. This is useful for showing a splash screen at the end of a game.
+     */
+    static CancelQuit() {}
+
+    /**
+     * Can the streamed level be loaded?
+     */
+    static CanStreamedLevelBeLoaded() {}
+
+    /**
+     * Captures a screenshot at path filename as a PNG file.
+     */
+    static CaptureScreenshot() {}
+
+    /**
+     * Calls a function in the web page that contains the WebGL Player.
+     */
+    static ExternalCall() {}
+
+    /**
+     * Evaluates script function in the containing web page.
+     */
+    static ExternalEval() {}
+
+    /**
+     * Get stack trace logging options. The default value is StackTraceLogType.ScriptOnly.
+     */
+    static GetStackTraceLogType() {}
+
+    /**
+     * How far has the download progressed? [0...1].
+     */
+    static GetStreamProgressForLevel() {}
+
+    /**
+     * Is Unity activated with the Pro license?
+     */
+    static HasProLicense() {}
+
+    /**
+     * Check if the user has authorized use of the webcam or microphone in the Web Player.
+     */
+    static HasUserAuthorization() {}
+
+    /**
+     * Opens the url in a browser.
+     */
+    static OpenURL() {}
+
+    /**
+     * Quits the player application.
+     */
+    static Quit() {}
+
+    /**
+     * Request advertising ID for iOS, Android and Windows Store.
+     */
+    static RequestAdvertisingIdentifierAsync() {}
+
+    /**
+     * Request authorization to use the webcam or microphone in the Web Player.
+     */
+    static RequestUserAuthorization() {}
+
+    /**
+     * Set stack trace logging options. The default value is StackTraceLogType.ScriptOnly.
+     */
+    static SetStackTraceLogType() {}
+
+    /**
+     * Unloads the Unity runtime.
+     */
+    static Unload() {}
+
 
 
 }

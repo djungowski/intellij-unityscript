@@ -40,6 +40,21 @@ class Highlighter {
     static set activeVisible(value) {}
 
 
+    /**
+     * Highlights an element in the editor.
+     */
+    static Highlight() {}
+
+    /**
+     * Call this method to create an identifiable rect that the Highlighter can find.
+     */
+    static HighlightIdentifier() {}
+
+    /**
+     * Stops the active highlight.
+     */
+    static Stop() {}
+
 
 
 }

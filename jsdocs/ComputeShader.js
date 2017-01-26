@@ -1,84 +1,34 @@
 class ComputeShader {
 
     /**
-     * Execute a compute shader.
+     * Removes a gameobject, component or asset.
      */
-    static Dispatch() {}
+    static Destroy() {}
 
     /**
-     * Execute a compute shader.
+     * Destroys the object obj immediately.
      */
-    static DispatchIndirect() {}
+    static DestroyImmediate() {}
 
     /**
-     * Find ComputeShader kernel index.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static FindKernel() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Get kernel thread group sizes.
+     * Returns the first active loaded object of Type type.
      */
-    static GetKernelThreadGroupSizes() {}
+    static FindObjectOfType() {}
 
     /**
-     * Checks whether a shader contains a given kernel.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static HasKernel() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Set a bool parameter.
+     * Clones the object original and returns the clone.
      */
-    static SetBool() {}
-
-    /**
-     * Sets an input or output compute buffer.
-     */
-    static SetBuffer() {}
-
-    /**
-     * Set a float parameter.
-     */
-    static SetFloat() {}
-
-    /**
-     * Set multiple consecutive float parameters at once.
-     */
-    static SetFloats() {}
-
-    /**
-     * Set an integer parameter.
-     */
-    static SetInt() {}
-
-    /**
-     * Set multiple consecutive integer parameters at once.
-     */
-    static SetInts() {}
-
-    /**
-     * Set a texture parameter.
-     */
-    static SetTexture() {}
-
-    /**
-     * Set a texture parameter from a global texture property.
-     */
-    static SetTextureFromGlobal() {}
-
-    /**
-     * Set a vector parameter.
-     */
-    static SetVector() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

@@ -1,34 +1,39 @@
 class MovieTexture {
 
     /**
-     * Pauses playing the movie.
+     * Removes a gameobject, component or asset.
      */
-    static Pause() {}
+    static Destroy() {}
 
     /**
-     * Starts playing the movie.
+     * Destroys the object obj immediately.
      */
-    static Play() {}
+    static DestroyImmediate() {}
 
     /**
-     * Stops playing the movie, and rewinds it to the beginning.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static Stop() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns the instance id of the object.
+     * Returns the first active loaded object of Type type.
      */
-    static GetInstanceID() {}
+    static FindObjectOfType() {}
 
     /**
-     * Returns the name of the game object.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static ToString() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Retrieve a native (underlying graphics API) pointer to the texture resource.
+     * Clones the object original and returns the clone.
      */
-    static GetNativeTexturePtr() {}
+    static Instantiate() {}
+
+    /**
+     * Sets Anisotropic limits.
+     */
+    static SetGlobalAnisotropicFilteringLimits() {}
 
 
     /**

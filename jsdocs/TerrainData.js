@@ -1,94 +1,34 @@
 class TerrainData {
 
     /**
-     * Returns the alpha map at a position x, y given a width and height.
+     * Removes a gameobject, component or asset.
      */
-    static GetAlphamaps() {}
+    static Destroy() {}
 
     /**
-     * Returns a 2D array of the detail object density in the specific location.
+     * Destroys the object obj immediately.
      */
-    static GetDetailLayer() {}
+    static DestroyImmediate() {}
 
     /**
-     * Gets the height at a certain point x,y.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetHeight() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Get an array of heightmap samples.
+     * Returns the first active loaded object of Type type.
      */
-    static GetHeights() {}
+    static FindObjectOfType() {}
 
     /**
-     * Gets an interpolated height at a point x,y.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetInterpolatedHeight() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Get an interpolated normal at a given location.
+     * Clones the object original and returns the clone.
      */
-    static GetInterpolatedNormal() {}
-
-    /**
-     * Gets the gradient of the terrain at point (x,y).
-     */
-    static GetSteepness() {}
-
-    /**
-     * Returns an array of all supported detail layer indices in the area.
-     */
-    static GetSupportedLayers() {}
-
-    /**
-     * Get the tree instance at the specified index. It is used as a faster version of treeInstances[index] as this function doesn&#039;t create the entire tree instances array.
-     */
-    static GetTreeInstance() {}
-
-    /**
-     * Reloads all the values of the available prototypes (ie, detail mesh assets) in the TerrainData Object.
-     */
-    static RefreshPrototypes() {}
-
-    /**
-     * Assign all splat values in the given map area.
-     */
-    static SetAlphamaps() {}
-
-    /**
-     * Sets the detail layer density map.
-     */
-    static SetDetailLayer() {}
-
-    /**
-     * Set the resolution of the detail map.
-     */
-    static SetDetailResolution() {}
-
-    /**
-     * Set an array of heightmap samples.
-     */
-    static SetHeights() {}
-
-    /**
-     * Set an array of heightmap samples.
-     */
-    static SetHeightsDelayLOD() {}
-
-    /**
-     * Set the tree instance with new parameters at the specified index. However, TreeInstance.prototypeIndex and TreeInstance.position can not be changed otherwise an ArgumentException will be thrown.
-     */
-    static SetTreeInstance() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

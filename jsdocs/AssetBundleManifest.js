@@ -1,39 +1,34 @@
 class AssetBundleManifest {
 
     /**
-     * Get all the AssetBundles in the manifest.
+     * Removes a gameobject, component or asset.
      */
-    static GetAllAssetBundles() {}
+    static Destroy() {}
 
     /**
-     * Get all the AssetBundles with variant in the manifest.
+     * Destroys the object obj immediately.
      */
-    static GetAllAssetBundlesWithVariant() {}
+    static DestroyImmediate() {}
 
     /**
-     * Get all the dependent AssetBundles for the given AssetBundle.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetAllDependencies() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Get the hash for the given AssetBundle.
+     * Returns the first active loaded object of Type type.
      */
-    static GetAssetBundleHash() {}
+    static FindObjectOfType() {}
 
     /**
-     * Get the direct dependent AssetBundles for the given AssetBundle.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetDirectDependencies() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns the instance id of the object.
+     * Clones the object original and returns the clone.
      */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

@@ -1,5 +1,10 @@
 class UnwrapParam {
 
+    /**
+     * Will set default values for params.
+     */
+    static SetDefaults() {}
+
 
     /**
      * Maximum allowed angle distortion (0..1).

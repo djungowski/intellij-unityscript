@@ -1,14 +1,34 @@
 class LightmapParameters {
 
     /**
-     * Returns the instance id of the object.
+     * Removes a gameobject, component or asset.
      */
-    static GetInstanceID() {}
+    static Destroy() {}
 
     /**
-     * Returns the name of the game object.
+     * Destroys the object obj immediately.
      */
-    static ToString() {}
+    static DestroyImmediate() {}
+
+    /**
+     * Makes the object target not be destroyed automatically when loading a new scene.
+     */
+    static DontDestroyOnLoad() {}
+
+    /**
+     * Returns the first active loaded object of Type type.
+     */
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
 
 
     /**

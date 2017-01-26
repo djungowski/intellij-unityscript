@@ -1,29 +1,9 @@
 class ComputeBuffer {
 
     /**
-     * Read data values from the buffer into an array.
+     * Copy counter value of append/consume buffer into another buffer.
      */
-    static GetData() {}
-
-    /**
-     * Retrieve a native (underlying graphics API) pointer to the buffer.
-     */
-    static GetNativeBufferPtr() {}
-
-    /**
-     * Release a Compute Buffer.
-     */
-    static Release() {}
-
-    /**
-     * Sets counter value of append/consume buffer.
-     */
-    static SetCounterValue() {}
-
-    /**
-     * Set the buffer with values from an array.
-     */
-    static SetData() {}
+    static CopyCount() {}
 
 
     /**

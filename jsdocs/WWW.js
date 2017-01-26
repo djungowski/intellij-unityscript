@@ -1,24 +1,19 @@
 class WWW {
 
     /**
-     * Disposes of an existing WWW object.
+     * Escapes characters in a string to ensure they are URL-friendly.
      */
-    static Dispose() {}
+    static EscapeURL() {}
 
     /**
-     * Returns an AudioClip generated from the downloaded data (Read Only).
+     * Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.
      */
-    static GetAudioClip() {}
+    static LoadFromCacheOrDownload() {}
 
     /**
-     * Returns an AudioClip generated from the downloaded data that is compressed in memory (Read Only).
+     * Converts URL-friendly escape sequences back to normal text.
      */
-    static GetAudioClipCompressed() {}
-
-    /**
-     * Replaces the contents of an existing Texture2D with an image from the downloaded data.
-     */
-    static LoadImageIntoTexture() {}
+    static UnEscapeURL() {}
 
 
     /**

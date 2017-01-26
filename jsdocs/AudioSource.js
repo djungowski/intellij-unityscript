@@ -1,214 +1,39 @@
 class AudioSource {
 
     /**
-     * Get the current custom curve for the given AudioSourceCurveType.
+     * Plays an AudioClip at a given position in world space.
      */
-    static GetCustomCurve() {}
+    static PlayClipAtPoint() {}
 
     /**
-     * Provides a block of the currently playing source&#039;s output data.
+     * Removes a gameobject, component or asset.
      */
-    static GetOutputData() {}
+    static Destroy() {}
 
     /**
-     * Reads a user-defined parameter of a custom spatializer effect that is attached to an AudioSource.
+     * Destroys the object obj immediately.
      */
-    static GetSpatializerFloat() {}
+    static DestroyImmediate() {}
 
     /**
-     * Provides a block of the currently playing audio source&#039;s spectrum data.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetSpectrumData() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Pauses playing the clip.
+     * Returns the first active loaded object of Type type.
      */
-    static Pause() {}
+    static FindObjectOfType() {}
 
     /**
-     * Plays the clip with an optional certain delay.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static Play() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Plays the clip with a delay specified in seconds. Users are advised to use this function instead of the old Play(delay) function that took a delay specified in samples relative to a reference rate of 44.1 kHz as an argument.
+     * Clones the object original and returns the clone.
      */
-    static PlayDelayed() {}
-
-    /**
-     * Plays an AudioClip, and scales the AudioSource volume by volumeScale.
-     */
-    static PlayOneShot() {}
-
-    /**
-     * Plays the clip at a specific time on the absolute time-line that AudioSettings.dspTime reads from.
-     */
-    static PlayScheduled() {}
-
-    /**
-     * Set the custom curve for the given AudioSourceCurveType.
-     */
-    static SetCustomCurve() {}
-
-    /**
-     * Changes the time at which a sound that has already been scheduled to play will end. Notice that depending on the timing not all rescheduling requests can be fulfilled.
-     */
-    static SetScheduledEndTime() {}
-
-    /**
-     * Changes the time at which a sound that has already been scheduled to play will start.
-     */
-    static SetScheduledStartTime() {}
-
-    /**
-     * Sets a user-defined parameter of a custom spatializer effect that is attached to an AudioSource.
-     */
-    static SetSpatializerFloat() {}
-
-    /**
-     * Stops playing the clip.
-     */
-    static Stop() {}
-
-    /**
-     * Unpause the paused playback of this AudioSource.
-     */
-    static UnPause() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Get the current custom curve for the given AudioSourceCurveType.
-     */
-    static GetCustomCurve() {}
-
-    /**
-     * Provides a block of the currently playing source&#039;s output data.
-     */
-    static GetOutputData() {}
-
-    /**
-     * Reads a user-defined parameter of a custom spatializer effect that is attached to an AudioSource.
-     */
-    static GetSpatializerFloat() {}
-
-    /**
-     * Provides a block of the currently playing audio source&#039;s spectrum data.
-     */
-    static GetSpectrumData() {}
-
-    /**
-     * Pauses playing the clip.
-     */
-    static Pause() {}
-
-    /**
-     * Plays the clip with an optional certain delay.
-     */
-    static Play() {}
-
-    /**
-     * Plays the clip with a delay specified in seconds. Users are advised to use this function instead of the old Play(delay) function that took a delay specified in samples relative to a reference rate of 44.1 kHz as an argument.
-     */
-    static PlayDelayed() {}
-
-    /**
-     * Plays an AudioClip, and scales the AudioSource volume by volumeScale.
-     */
-    static PlayOneShot() {}
-
-    /**
-     * Plays the clip at a specific time on the absolute time-line that AudioSettings.dspTime reads from.
-     */
-    static PlayScheduled() {}
-
-    /**
-     * Set the custom curve for the given AudioSourceCurveType.
-     */
-    static SetCustomCurve() {}
-
-    /**
-     * Changes the time at which a sound that has already been scheduled to play will end. Notice that depending on the timing not all rescheduling requests can be fulfilled.
-     */
-    static SetScheduledEndTime() {}
-
-    /**
-     * Changes the time at which a sound that has already been scheduled to play will start.
-     */
-    static SetScheduledStartTime() {}
-
-    /**
-     * Sets a user-defined parameter of a custom spatializer effect that is attached to an AudioSource.
-     */
-    static SetSpatializerFloat() {}
-
-    /**
-     * Stops playing the clip.
-     */
-    static Stop() {}
-
-    /**
-     * Unpause the paused playback of this AudioSource.
-     */
-    static UnPause() {}
+    static Instantiate() {}
 
 
     /**

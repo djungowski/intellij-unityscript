@@ -1,24 +1,39 @@
 class DDSImporter {
 
     /**
-     * Save asset importer settings if asset importer is dirty.
+     * Retrieves the asset importer for the asset at path.
      */
-    static SaveAndReimport() {}
+    static GetAtPath() {}
 
     /**
-     * Set the AssetBundle name and variant.
+     * Removes a gameobject, component or asset.
      */
-    static SetAssetBundleNameAndVariant() {}
+    static Destroy() {}
 
     /**
-     * Returns the instance id of the object.
+     * Destroys the object obj immediately.
      */
-    static GetInstanceID() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns the name of the game object.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static ToString() {}
+    static DontDestroyOnLoad() {}
+
+    /**
+     * Returns the first active loaded object of Type type.
+     */
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
 
 
     /**

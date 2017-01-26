@@ -11,84 +11,34 @@ class LODGroup {
 
 
     /**
-     * 
+     * Removes a gameobject, component or asset.
      */
-    static ForceLOD() {}
+    static Destroy() {}
 
     /**
-     * Returns the array of LODs.
+     * Destroys the object obj immediately.
      */
-    static GetLODs() {}
+    static DestroyImmediate() {}
 
     /**
-     * Recalculate the bounding region for the LODGroup (Relatively slow, do not call often).
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static RecalculateBounds() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Set the LODs for the LOD group. This will remove any existing LODs configured on the LODGroup.
+     * Returns the first active loaded object of Type type.
      */
-    static SetLODs() {}
+    static FindObjectOfType() {}
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static BroadcastMessage() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Is this game object tagged with tag ?
+     * Clones the object original and returns the clone.
      */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

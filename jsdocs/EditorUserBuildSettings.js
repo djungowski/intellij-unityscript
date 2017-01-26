@@ -430,6 +430,43 @@ class EditorUserBuildSettings {
     static set xboxOneUsername(value) {}
 
 
+    /**
+     * Get the current location for the build.
+     */
+    static GetBuildLocation() {}
+
+    /**
+     * Returns value for platform specifc Editor setting.
+     */
+    static GetPlatformSettings() {}
+
+    /**
+     * Is .NET Native enabled for specific build configuration.
+More information - https://msdn.microsoft.com/en-us/library/dn584397(v=vs.110).aspx.
+     */
+    static GetWSADotNetNative() {}
+
+    /**
+     * Set a new location for the build.
+     */
+    static SetBuildLocation() {}
+
+    /**
+     * Set platform specifc Editor setting.
+     */
+    static SetPlatformSettings() {}
+
+    /**
+     * Enables or Disables .NET Native for specific build configuration.
+More information - https://msdn.microsoft.com/en-us/library/dn584397(v=vs.110).aspx.
+     */
+    static SetWSADotNetNative() {}
+
+    /**
+     * Select a new build target to be active.
+     */
+    static SwitchActiveBuildTarget() {}
+
 
 
 }

@@ -1,24 +1,39 @@
 class GUISkin {
 
     /**
-     * Try to search for a GUIStyle. This functions returns NULL and does not give an error.
+     * Removes a gameobject, component or asset.
      */
-    static FindStyle() {}
+    static Destroy() {}
 
     /**
-     * Get a named GUIStyle.
+     * Destroys the object obj immediately.
      */
-    static GetStyle() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns the instance id of the object.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetInstanceID() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns the name of the game object.
+     * Returns the first active loaded object of Type type.
      */
-    static ToString() {}
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
+
+    /**
+     * Creates an instance of a scriptable object.
+     */
+    static CreateInstance() {}
 
 
     /**

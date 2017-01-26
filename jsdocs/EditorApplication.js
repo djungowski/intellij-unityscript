@@ -180,6 +180,76 @@ class EditorApplication {
     static set update(value) {}
 
 
+    /**
+     * Plays system beep sound.
+     */
+    static Beep() {}
+
+    /**
+     * Set the hierarchy sorting method as dirty.
+     */
+    static DirtyHierarchyWindowSorting() {}
+
+    /**
+     * Invokes the menu item in the specified path.
+     */
+    static ExecuteMenuItem() {}
+
+    /**
+     * Exit the Unity editor application.
+     */
+    static Exit() {}
+
+    /**
+     * Load the given level additively in play mode asynchronously
+     */
+    static LoadLevelAdditiveAsyncInPlayMode() {}
+
+    /**
+     * Load the given level additively in play mode.
+     */
+    static LoadLevelAdditiveInPlayMode() {}
+
+    /**
+     * Load the given level in play mode asynchronously.
+     */
+    static LoadLevelAsyncInPlayMode() {}
+
+    /**
+     * Load the given level in play mode.
+     */
+    static LoadLevelInPlayMode() {}
+
+    /**
+     * Prevents loading of assemblies when it is inconvenient.
+     */
+    static LockReloadAssemblies() {}
+
+    /**
+     * Open another project.
+     */
+    static OpenProject() {}
+
+    /**
+     * Can be used to ensure repaint of the HierarchyWindow.
+     */
+    static RepaintHierarchyWindow() {}
+
+    /**
+     * Can be used to ensure repaint of the ProjectWindow.
+     */
+    static RepaintProjectWindow() {}
+
+    /**
+     * Perform a single frame step.
+     */
+    static Step() {}
+
+    /**
+     * Must be called after LockReloadAssemblies, to reenable loading of assemblies.
+     */
+    static UnlockReloadAssemblies() {}
+
 
 
 }

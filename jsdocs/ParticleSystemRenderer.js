@@ -1,110 +1,34 @@
 class ParticleSystemRenderer {
 
     /**
-     * Query whether the particle system renderer uses a particular set of vertex streams.
+     * Removes a gameobject, component or asset.
      */
-    static AreVertexStreamsEnabled() {}
+    static Destroy() {}
 
     /**
-     * Disable a set of vertex shader streams on the particle system renderer.
-The position stream is always enabled, and any attempts to remove it will be ignored.
+     * Destroys the object obj immediately.
      */
-    static DisableVertexStreams() {}
+    static DestroyImmediate() {}
 
     /**
-     * Enable a set of vertex shader streams on the particle system renderer.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static EnableVertexStreams() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Query whether the particle system renderer uses a particular set of vertex streams.
+     * Returns the first active loaded object of Type type.
      */
-    static GetEnabledVertexStreams() {}
+    static FindObjectOfType() {}
 
     /**
-     * Set the array of meshes used as particles.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetMeshes() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Set an array of meshes used as particles instead of a billboarded texture.
+     * Clones the object original and returns the clone.
      */
-    static SetMeshes() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Returns an array of closest reflection probes with weights, weight shows how much influence the probe has on the renderer, this value is also used when blending between reflection probes occur.
-     */
-    static GetClosestReflectionProbes() {}
-
-    /**
-     * Get per-renderer material property block.
-     */
-    static GetPropertyBlock() {}
-
-    /**
-     * Lets you add per-renderer material parameters without duplicating a material.
-     */
-    static SetPropertyBlock() {}
+    static Instantiate() {}
 
 
     /**

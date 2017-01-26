@@ -1,84 +1,9 @@
 class SerializedProperty {
 
     /**
-     * Remove all elements from the array.
+     * See if contained serialized properties are equal.
      */
-    static ClearArray() {}
-
-    /**
-     * Returns a copy of the SerializedProperty iterator in its current state. This is useful if you want to keep a reference to the current property but continue with the iteration.
-     */
-    static Copy() {}
-
-    /**
-     * Count visible children of this property, including this property itself.
-     */
-    static CountInProperty() {}
-
-    /**
-     * Count remaining visible properties.
-     */
-    static CountRemaining() {}
-
-    /**
-     * Delete the element at the specified index in the array.
-     */
-    static DeleteArrayElementAtIndex() {}
-
-    /**
-     * Deletes the serialized property.
-     */
-    static DeleteCommand() {}
-
-    /**
-     * Duplicates the serialized property.
-     */
-    static DuplicateCommand() {}
-
-    /**
-     * Retrieves the SerializedProperty at a relative path to the current property.
-     */
-    static FindPropertyRelative() {}
-
-    /**
-     * Returns the element at the specified index in the array.
-     */
-    static GetArrayElementAtIndex() {}
-
-    /**
-     * Retrieves the SerializedProperty that defines the end range of this property.
-     */
-    static GetEndProperty() {}
-
-    /**
-     * Retrieves an iterator that allows you to iterator over the current nexting of a serialized property.
-     */
-    static GetEnumerator() {}
-
-    /**
-     * Insert an empty element at the specified index in the array.
-     */
-    static InsertArrayElementAtIndex() {}
-
-    /**
-     * Move an array element from srcIndex to dstIndex.
-     */
-    static MoveArrayElement() {}
-
-    /**
-     * Move to next property.
-     */
-    static Next() {}
-
-    /**
-     * Move to next visible property.
-     */
-    static NextVisible() {}
-
-    /**
-     * Move to first property of the object.
-     */
-    static Reset() {}
+    static EqualContents() {}
 
 
     /**

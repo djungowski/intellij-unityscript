@@ -70,6 +70,26 @@ class Caching {
     static set spaceOccupied(value) {}
 
 
+    /**
+     * This is a WebPlayer-only function.
+     */
+    static Authorize() {}
+
+    /**
+     * Delete all AssetBundle and Procedural Material content that has been cached by the current application.
+     */
+    static CleanCache() {}
+
+    /**
+     * Checks if an AssetBundle is cached.
+     */
+    static IsVersionCached() {}
+
+    /**
+     * Bumps the timestamp of a cached file to be the current time.
+     */
+    static MarkAsUsed() {}
+
 
 
 }

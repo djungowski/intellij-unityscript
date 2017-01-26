@@ -40,6 +40,31 @@ class MasterServer {
     static set updateRate(value) {}
 
 
+    /**
+     * Clear the host list which was received by MasterServer.PollHostList.
+     */
+    static ClearHostList() {}
+
+    /**
+     * Check for the latest host list received by using MasterServer.RequestHostList.
+     */
+    static PollHostList() {}
+
+    /**
+     * Register this server on the master server.
+     */
+    static RegisterHost() {}
+
+    /**
+     * Request a host list from the master server.
+     */
+    static RequestHostList() {}
+
+    /**
+     * Unregister this server from the master server.
+     */
+    static UnregisterHost() {}
+
 
 
 }

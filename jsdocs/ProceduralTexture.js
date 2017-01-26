@@ -1,30 +1,39 @@
 class ProceduralTexture {
 
     /**
-     * Grab pixel values from a ProceduralTexture.
-
+     * Removes a gameobject, component or asset.
      */
-    static GetPixels32() {}
-
-    /**
-     * The output type of this ProceduralTexture.
-     */
-    static GetProceduralOutputType() {}
+    static Destroy() {}
 
     /**
-     * Returns the instance id of the object.
+     * Destroys the object obj immediately.
      */
-    static GetInstanceID() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns the name of the game object.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static ToString() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Retrieve a native (underlying graphics API) pointer to the texture resource.
+     * Returns the first active loaded object of Type type.
      */
-    static GetNativeTexturePtr() {}
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
+
+    /**
+     * Sets Anisotropic limits.
+     */
+    static SetGlobalAnisotropicFilteringLimits() {}
 
 
     /**

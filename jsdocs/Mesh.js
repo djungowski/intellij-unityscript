@@ -1,144 +1,34 @@
 class Mesh {
 
     /**
-     * Adds a new blend shape frame.
+     * Removes a gameobject, component or asset.
      */
-    static AddBlendShapeFrame() {}
+    static Destroy() {}
 
     /**
-     * Clears all vertex data and all triangle indices.
+     * Destroys the object obj immediately.
      */
-    static Clear() {}
+    static DestroyImmediate() {}
 
     /**
-     * Clears all blend shapes from Mesh.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static ClearBlendShapes() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Combines several Meshes into this Mesh.
+     * Returns the first active loaded object of Type type.
      */
-    static CombineMeshes() {}
+    static FindObjectOfType() {}
 
     /**
-     * Returns the frame count for a blend shape.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetBlendShapeFrameCount() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Retreives deltaVertices, deltaNormals and deltaTangents of a blend shape frame.
+     * Clones the object original and returns the clone.
      */
-    static GetBlendShapeFrameVertices() {}
-
-    /**
-     * Returns the weight of a blend shape frame.
-     */
-    static GetBlendShapeFrameWeight() {}
-
-    /**
-     * Returns index of BlendShape by given name.
-     */
-    static GetBlendShapeIndex() {}
-
-    /**
-     * Returns name of BlendShape by given index.
-     */
-    static GetBlendShapeName() {}
-
-    /**
-     * Returns the index buffer for the sub-Mesh.
-     */
-    static GetIndices() {}
-
-    /**
-     * Retrieves a native (underlying graphics API) pointer to the index buffer.
-     */
-    static GetNativeIndexBufferPtr() {}
-
-    /**
-     * Retrieves a native (underlying graphics API) pointer to the vertex buffer.
-     */
-    static GetNativeVertexBufferPtr() {}
-
-    /**
-     * Gets the topology of a sub-Mesh.
-     */
-    static GetTopology() {}
-
-    /**
-     * Returns the triangle list for the sub-Mesh.
-     */
-    static GetTriangles() {}
-
-    /**
-     * Get the UVs for a given chanel.
-     */
-    static GetUVs() {}
-
-    /**
-     * Optimize mesh for frequent updates.
-     */
-    static MarkDynamic() {}
-
-    /**
-     * Recalculate the bounding volume of the Mesh from the vertices.
-     */
-    static RecalculateBounds() {}
-
-    /**
-     * Recalculates the normals of the Mesh from the triangles and vertices.
-     */
-    static RecalculateNormals() {}
-
-    /**
-     * Vertex colors of the Mesh.
-     */
-    static SetColors() {}
-
-    /**
-     * Sets the index buffer for the sub-Mesh.
-     */
-    static SetIndices() {}
-
-    /**
-     * Set the normals of the Mesh.
-     */
-    static SetNormals() {}
-
-    /**
-     * Set the tangents of the Mesh.
-     */
-    static SetTangents() {}
-
-    /**
-     * Sets the triangle list for the sub-Mesh.
-     */
-    static SetTriangles() {}
-
-    /**
-     * Set the UVs for a given chanel.
-     */
-    static SetUVs() {}
-
-    /**
-     * Assigns a new vertex positions array.
-     */
-    static SetVertices() {}
-
-    /**
-     * Upload previously done Mesh modifications to the graphics API.
-     */
-    static UploadMeshData() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

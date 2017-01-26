@@ -200,6 +200,101 @@ class Network {
     static set useProxy(value) {}
 
 
+    /**
+     * Query for the next available network view ID number and allocate it (reserve).
+     */
+    static AllocateViewID() {}
+
+    /**
+     * Close the connection to another system.
+     */
+    static CloseConnection() {}
+
+    /**
+     * Connect to the specified host (ip or domain name) and server port.
+     */
+    static Connect() {}
+
+    /**
+     * Destroy the object associated with this view ID across the network.
+     */
+    static Destroy() {}
+
+    /**
+     * Destroy all the objects based on view IDs belonging to this player.
+     */
+    static DestroyPlayerObjects() {}
+
+    /**
+     * Close all open connections and shuts down the network interface.
+     */
+    static Disconnect() {}
+
+    /**
+     * The last average ping time to the given player in milliseconds.
+     */
+    static GetAveragePing() {}
+
+    /**
+     * The last ping time to the given player in milliseconds.
+     */
+    static GetLastPing() {}
+
+    /**
+     * Check if this machine has a public IP address.
+     */
+    static HavePublicAddress() {}
+
+    /**
+     * Initializes security layer.
+     */
+    static InitializeSecurity() {}
+
+    /**
+     * Initialize the server.
+     */
+    static InitializeServer() {}
+
+    /**
+     * Network instantiate a prefab.
+     */
+    static Instantiate() {}
+
+    /**
+     * Remove all RPC functions which belong to this player ID.
+     */
+    static RemoveRPCs() {}
+
+    /**
+     * Remove all RPC functions which belong to given group number.
+     */
+    static RemoveRPCsInGroup() {}
+
+    /**
+     * Set the level prefix which will then be prefixed to all network ViewID numbers.
+     */
+    static SetLevelPrefix() {}
+
+    /**
+     * Enable or disables the reception of messages in a specific group number from a specific player.
+     */
+    static SetReceivingEnabled() {}
+
+    /**
+     * Enables or disables transmission of messages and RPC calls on a specific network group number.
+     */
+    static SetSendingEnabled() {}
+
+    /**
+     * Test this machines network connection.
+     */
+    static TestConnection() {}
+
+    /**
+     * Test the connection specifically for NAT punch-through connectivity.
+     */
+    static TestConnectionNAT() {}
+
 
 
 }

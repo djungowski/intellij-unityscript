@@ -21,19 +21,9 @@ class Display {
 
 
     /**
-     * Activate an external display. Eg. Secondary Monitors connected to the System.
+     * Query relative mouse coordinates.
      */
-    static Activate() {}
-
-    /**
-     * Set rendering size and position on screen (Windows only).
-     */
-    static SetParams() {}
-
-    /**
-     * Sets rendering resolution for the display.
-     */
-    static SetRenderingResolution() {}
+    static RelativeMouseAt() {}
 
 
     /**

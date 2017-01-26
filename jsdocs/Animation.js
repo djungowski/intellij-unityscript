@@ -1,124 +1,34 @@
 class Animation {
 
     /**
-     * Adds a clip to the animation with name newName.
+     * Removes a gameobject, component or asset.
      */
-    static AddClip() {}
+    static Destroy() {}
 
     /**
-     * Blends the animation named animation towards targetWeight over the next time seconds.
+     * Destroys the object obj immediately.
      */
-    static Blend() {}
+    static DestroyImmediate() {}
 
     /**
-     * Fades the animation with name animation in over a period of time seconds and fades other animations out.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static CrossFade() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Cross fades an animation after previous animations has finished playing.
+     * Returns the first active loaded object of Type type.
      */
-    static CrossFadeQueued() {}
+    static FindObjectOfType() {}
 
     /**
-     * Get the number of clips currently assigned to this animation.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetClipCount() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Is the animation named name playing?
+     * Clones the object original and returns the clone.
      */
-    static IsPlaying() {}
-
-    /**
-     * Plays an animation without any blending.
-     */
-    static Play() {}
-
-    /**
-     * Plays an animation after previous animations has finished playing.
-     */
-    static PlayQueued() {}
-
-    /**
-     * Remove clip from the animation list.
-     */
-    static RemoveClip() {}
-
-    /**
-     * Rewinds the animation named name.
-     */
-    static Rewind() {}
-
-    /**
-     * Samples animations at the current state.
-     */
-    static Sample() {}
-
-    /**
-     * Stops all playing animations that were started with this Animation.
-     */
-    static Stop() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

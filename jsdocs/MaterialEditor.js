@@ -11,394 +11,94 @@ class MaterialEditor {
 
 
     /**
-     * Called when the Editor is woken up.
+     * Apply initial MaterialPropertyDrawer values.
      */
-    static Awake() {}
+    static ApplyMaterialPropertyDrawers() {}
 
     /**
-     * Draw a property field for a color shader property.
+     * Calculate height needed for the property, ignoring custom drawers.
      */
-    static ColorProperty() {}
+    static GetDefaultPropertyHeight() {}
 
     /**
-     * Default handling of preview area for materials.
+     * Utility method for GUI layouting ShaderGUI. Used e.g for the rect after a left aligned Color field.
      */
-    static DefaultPreviewGUI() {}
+    static GetFlexibleRectBetweenFieldAndRightEdge() {}
 
     /**
-     * Default toolbar for material preview area.
+     * Utility method for GUI layouting ShaderGUI.
      */
-    static DefaultPreviewSettingsGUI() {}
+    static GetFlexibleRectBetweenLabelAndField() {}
 
     /**
-     * Handles UI for one shader property ignoring any custom drawers.
+     * Utility method for GUI layouting ShaderGUI.
      */
-    static DefaultShaderProperty() {}
+    static GetLeftAlignedFieldRect() {}
 
     /**
-     * Draw a property field for a float shader property.
+     * Get shader property information of the passed materials.
      */
-    static FloatProperty() {}
+    static GetMaterialProperties() {}
 
     /**
-     * Calculate height needed for the property.
+     * Get information about a single shader property.
      */
-    static GetPropertyHeight() {}
+    static GetMaterialProperty() {}
 
     /**
-     * Returns the free rect below the label and before the large thumb object field. Is used for e.g. tiling and offset properties.
+     * Utility method for GUI layouting ShaderGUI. This is the rect after the label which can be used for multiple properties. The input rect can be fetched by calling: EditorGUILayout.GetControlRect.
      */
-    static GetTexturePropertyCustomArea() {}
+    static GetRectAfterLabelWidth() {}
 
     /**
-     * Can this component be Previewed in its current state?
+     * Utility method for GUI layouting ShaderGUI.
      */
-    static HasPreviewGUI() {}
+    static GetRightAlignedFieldRect() {}
 
     /**
-     * Make a help box with a message and button. Returns true, if button was pressed.
+     * On return previousEditor is an editor for targetObject or targetObjects. The function either returns if the editor is already tracking the objects, or Destroys the previous editor and creates a new one.
      */
-    static HelpBoxWithButton() {}
+    static CreateCachedEditor() {}
 
     /**
-     * This function will draw the UI for the lightmap emission property. (None, Realtime, baked)See Also: MaterialLightmapFlags.
+     * Make a custom editor for targetObject or targetObjects.
      */
-    static LightmapEmissionProperty() {}
+    static CreateEditor() {}
 
     /**
-     * Called when the editor is disabled, if overridden please call the base OnDisable() to ensure that the material inspector is set up properly.
+     * Removes a gameobject, component or asset.
      */
-    static OnDisable() {}
+    static Destroy() {}
 
     /**
-     * Called when the editor is enabled, if overridden please call the base OnEnable() to ensure that the material inspector is set up properly.
+     * Destroys the object obj immediately.
      */
-    static OnEnable() {}
+    static DestroyImmediate() {}
 
     /**
-     * Implement specific MaterialEditor GUI code here. If you want to simply extend the existing editor call the base OnInspectorGUI () before doing any custom GUI code.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static OnInspectorGUI() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Custom preview for Image component.
+     * Returns the first active loaded object of Type type.
      */
-    static OnPreviewGUI() {}
+    static FindObjectOfType() {}
 
     /**
-     * Whenever a material property is changed call this function. This will rebuild the inspector and validate the properties.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static PropertiesChanged() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Default rendering of shader properties.
+     * Clones the object original and returns the clone.
      */
-    static PropertiesDefaultGUI() {}
+    static Instantiate() {}
 
     /**
-     * Render the standard material properties. This method will either render properties using a IShaderGUI instance if found otherwise it uses PropertiesDefaultGUI.
+     * Creates an instance of a scriptable object.
      */
-    static PropertiesGUI() {}
-
-    /**
-     * Draw a range slider for a range shader property.
-     */
-    static RangeProperty() {}
-
-    /**
-     * Call this when you change a material property. It will add an undo for the action.
-     */
-    static RegisterPropertyChangeUndo() {}
-
-    /**
-     * Display UI for editing material&#039;s render queue setting.
-     */
-    static RenderQueueField() {}
-
-    /**
-     * Does this edit require to be repainted constantly in its current state?
-     */
-    static RequiresConstantRepaint() {}
-
-    /**
-     * Set EditorGUIUtility.fieldWidth and labelWidth to the default values that PropertiesGUI uses.
-     */
-    static SetDefaultGUIWidths() {}
-
-    /**
-     * Set the shader of the material.
-     */
-    static SetShader() {}
-
-    /**
-     * Handes UI for one shader property.
-     */
-    static ShaderProperty() {}
-
-    /**
-     * Checks if particular property has incorrect type of texture specified by the material, displays appropriate warning and suggests the user to automatically fix the problem.
-     */
-    static TextureCompatibilityWarning() {}
-
-    /**
-     * Draw a property field for a texture shader property.
-     */
-    static TextureProperty() {}
-
-    /**
-     * Draw a property field for a texture shader property that only takes up a single line height.
-     */
-    static TexturePropertyMiniThumbnail() {}
-
-    /**
-     * Method for showing a texture property control with additional inlined properites.
-     */
-    static TexturePropertySingleLine() {}
-
-    /**
-     * Method for showing a compact layout of properties.
-     */
-    static TexturePropertyTwoLines() {}
-
-    /**
-     * Method for showing a texture property control with a HDR color field and its color brightness float field.
-     */
-    static TexturePropertyWithHDRColor() {}
-
-    /**
-     * Draws tiling and offset properties for a texture.
-     */
-    static TextureScaleOffsetProperty() {}
-
-    /**
-     * Draw a property field for a vector shader property.
-     */
-    static VectorProperty() {}
-
-    /**
-     * Draw the built-in inspector.
-     */
-    static DrawDefaultInspector() {}
-
-    /**
-     * Call this function to draw the header of the editor.
-     */
-    static DrawHeader() {}
-
-    /**
-     * The first entry point for Preview Drawing.
-     */
-    static DrawPreview() {}
-
-    /**
-     * Implement this method to show asset information on top of the asset preview.
-     */
-    static GetInfoString() {}
-
-    /**
-     * Override this method if you want to change the label of the Preview area.
-     */
-    static GetPreviewTitle() {}
-
-    /**
-     * Implement to create your own interactive custom preview. Interactive custom previews are used in the preview area of the inspector and the object selector.
-     */
-    static OnInteractivePreviewGUI() {}
-
-    /**
-     * Override this method if you want to show custom controls in the preview header.
-     */
-    static OnPreviewSettings() {}
-
-    /**
-     * Override this method if you want to render a static preview that shows.
-     */
-    static RenderStaticPreview() {}
-
-    /**
-     * Repaint any inspectors that shows this editor.
-     */
-    static Repaint() {}
-
-    /**
-     * Override this method in subclasses to return false if you don&#039;t want default margins.
-     */
-    static UseDefaultMargins() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Called when the Editor is woken up.
-     */
-    static Awake() {}
-
-    /**
-     * Draw a property field for a color shader property.
-     */
-    static ColorProperty() {}
-
-    /**
-     * Default handling of preview area for materials.
-     */
-    static DefaultPreviewGUI() {}
-
-    /**
-     * Default toolbar for material preview area.
-     */
-    static DefaultPreviewSettingsGUI() {}
-
-    /**
-     * Handles UI for one shader property ignoring any custom drawers.
-     */
-    static DefaultShaderProperty() {}
-
-    /**
-     * Draw a property field for a float shader property.
-     */
-    static FloatProperty() {}
-
-    /**
-     * Calculate height needed for the property.
-     */
-    static GetPropertyHeight() {}
-
-    /**
-     * Returns the free rect below the label and before the large thumb object field. Is used for e.g. tiling and offset properties.
-     */
-    static GetTexturePropertyCustomArea() {}
-
-    /**
-     * Can this component be Previewed in its current state?
-     */
-    static HasPreviewGUI() {}
-
-    /**
-     * Make a help box with a message and button. Returns true, if button was pressed.
-     */
-    static HelpBoxWithButton() {}
-
-    /**
-     * This function will draw the UI for the lightmap emission property. (None, Realtime, baked)See Also: MaterialLightmapFlags.
-     */
-    static LightmapEmissionProperty() {}
-
-    /**
-     * Called when the editor is disabled, if overridden please call the base OnDisable() to ensure that the material inspector is set up properly.
-     */
-    static OnDisable() {}
-
-    /**
-     * Called when the editor is enabled, if overridden please call the base OnEnable() to ensure that the material inspector is set up properly.
-     */
-    static OnEnable() {}
-
-    /**
-     * Implement specific MaterialEditor GUI code here. If you want to simply extend the existing editor call the base OnInspectorGUI () before doing any custom GUI code.
-     */
-    static OnInspectorGUI() {}
-
-    /**
-     * Custom preview for Image component.
-     */
-    static OnPreviewGUI() {}
-
-    /**
-     * Whenever a material property is changed call this function. This will rebuild the inspector and validate the properties.
-     */
-    static PropertiesChanged() {}
-
-    /**
-     * Default rendering of shader properties.
-     */
-    static PropertiesDefaultGUI() {}
-
-    /**
-     * Render the standard material properties. This method will either render properties using a IShaderGUI instance if found otherwise it uses PropertiesDefaultGUI.
-     */
-    static PropertiesGUI() {}
-
-    /**
-     * Draw a range slider for a range shader property.
-     */
-    static RangeProperty() {}
-
-    /**
-     * Call this when you change a material property. It will add an undo for the action.
-     */
-    static RegisterPropertyChangeUndo() {}
-
-    /**
-     * Display UI for editing material&#039;s render queue setting.
-     */
-    static RenderQueueField() {}
-
-    /**
-     * Does this edit require to be repainted constantly in its current state?
-     */
-    static RequiresConstantRepaint() {}
-
-    /**
-     * Set EditorGUIUtility.fieldWidth and labelWidth to the default values that PropertiesGUI uses.
-     */
-    static SetDefaultGUIWidths() {}
-
-    /**
-     * Set the shader of the material.
-     */
-    static SetShader() {}
-
-    /**
-     * Handes UI for one shader property.
-     */
-    static ShaderProperty() {}
-
-    /**
-     * Checks if particular property has incorrect type of texture specified by the material, displays appropriate warning and suggests the user to automatically fix the problem.
-     */
-    static TextureCompatibilityWarning() {}
-
-    /**
-     * Draw a property field for a texture shader property.
-     */
-    static TextureProperty() {}
-
-    /**
-     * Draw a property field for a texture shader property that only takes up a single line height.
-     */
-    static TexturePropertyMiniThumbnail() {}
-
-    /**
-     * Method for showing a texture property control with additional inlined properites.
-     */
-    static TexturePropertySingleLine() {}
-
-    /**
-     * Method for showing a compact layout of properties.
-     */
-    static TexturePropertyTwoLines() {}
-
-    /**
-     * Method for showing a texture property control with a HDR color field and its color brightness float field.
-     */
-    static TexturePropertyWithHDRColor() {}
-
-    /**
-     * Draws tiling and offset properties for a texture.
-     */
-    static TextureScaleOffsetProperty() {}
-
-    /**
-     * Draw a property field for a vector shader property.
-     */
-    static VectorProperty() {}
+    static CreateInstance() {}
 
 
     /**

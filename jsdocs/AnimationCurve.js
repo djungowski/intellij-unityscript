@@ -1,29 +1,14 @@
 class AnimationCurve {
 
     /**
-     * Add a new key to the curve.
+     * Creates an ease-in and out curve starting at timeStart, valueStart and ending at timeEnd, valueEnd.
      */
-    static AddKey() {}
+    static EaseInOut() {}
 
     /**
-     * Evaluate the curve at time.
+     * A straight Line starting at timeStart, valueStart and ending at timeEnd, valueEnd.
      */
-    static Evaluate() {}
-
-    /**
-     * Removes the keyframe at index and inserts key.
-     */
-    static MoveKey() {}
-
-    /**
-     * Removes a key.
-     */
-    static RemoveKey() {}
-
-    /**
-     * Smooth the in and out tangents of the keyframe at index.
-     */
-    static SmoothTangents() {}
+    static Linear() {}
 
 
     /**

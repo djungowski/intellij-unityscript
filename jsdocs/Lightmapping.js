@@ -90,6 +90,56 @@ class Lightmapping {
     static set realtimeGI(value) {}
 
 
+    /**
+     * Stars a synchronous bake job.
+     */
+    static Bake() {}
+
+    /**
+     * Starts an asynchronous bake job.
+     */
+    static BakeAsync() {}
+
+    /**
+     * Bakes an array of scenes.
+     */
+    static BakeMultipleScenes() {}
+
+    /**
+     * Starts a synchronous bake job for the probe.
+     */
+    static BakeReflectionProbe() {}
+
+    /**
+     * Cancels the currently running asynchronous bake job.
+     */
+    static Cancel() {}
+
+    /**
+     * Deletes all lightmap assets and makes all lights behave as if they weren&#039;t baked yet.
+     */
+    static Clear() {}
+
+    /**
+     * Clears the cache used by lightmaps, reflection probes and default reflection.
+     */
+    static ClearDiskCache() {}
+
+    /**
+     * Remove the lighting data asset used by the current scene.
+     */
+    static ClearLightingDataAsset() {}
+
+    /**
+     * Get how many chunks the terrain is divided into for GI baking.
+     */
+    static GetTerrainGIChunks() {}
+
+    /**
+     * Calculates a Delaunay Tetrahedralization of the &#039;positions&#039; point set - the same way the lightmapper.
+     */
+    static Tetrahedralize() {}
+
 
 
 }

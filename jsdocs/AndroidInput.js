@@ -40,6 +40,11 @@ class AndroidInput {
     static set touchCountSecondary(value) {}
 
 
+    /**
+     * Returns object representing status of a specific touch on a secondary touchpad (Does not allocate temporary variables).
+     */
+    static GetSecondaryTouch() {}
+
 
 
 }

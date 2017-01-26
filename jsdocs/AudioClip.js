@@ -1,54 +1,39 @@
 class AudioClip {
 
     /**
-     * Fills an array with sample data from the clip.
+     * Creates a user AudioClip with a name and with the given length in samples, channels and frequency.
      */
-    static GetData() {}
+    static Create() {}
 
     /**
-     * Loads the audio data of a clip. Clips that have &quot;Preload Audio Data&quot; set will load the audio data automatically.
+     * Removes a gameobject, component or asset.
      */
-    static LoadAudioData() {}
+    static Destroy() {}
 
     /**
-     * Set sample data in a clip.
+     * Destroys the object obj immediately.
      */
-    static SetData() {}
+    static DestroyImmediate() {}
 
     /**
-     * Unloads the audio data associated with the clip. This works only for AudioClips that are based on actual sound file assets.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static UnloadAudioData() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns the instance id of the object.
+     * Returns the first active loaded object of Type type.
      */
-    static GetInstanceID() {}
+    static FindObjectOfType() {}
 
     /**
-     * Returns the name of the game object.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static ToString() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Fills an array with sample data from the clip.
+     * Clones the object original and returns the clone.
      */
-    static GetData() {}
-
-    /**
-     * Loads the audio data of a clip. Clips that have &quot;Preload Audio Data&quot; set will load the audio data automatically.
-     */
-    static LoadAudioData() {}
-
-    /**
-     * Set sample data in a clip.
-     */
-    static SetData() {}
-
-    /**
-     * Unloads the audio data associated with the clip. This works only for AudioClips that are based on actual sound file assets.
-     */
-    static UnloadAudioData() {}
+    static Instantiate() {}
 
 
     /**

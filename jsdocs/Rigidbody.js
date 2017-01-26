@@ -1,159 +1,34 @@
 class Rigidbody {
 
     /**
-     * Applies a force to a rigidbody that simulates explosion effects.
+     * Removes a gameobject, component or asset.
      */
-    static AddExplosionForce() {}
+    static Destroy() {}
 
     /**
-     * Adds a force to the Rigidbody.
+     * Destroys the object obj immediately.
      */
-    static AddForce() {}
+    static DestroyImmediate() {}
 
     /**
-     * Applies force at position. As a result this will apply a torque and force on the object.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static AddForceAtPosition() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Adds a force to the rigidbody relative to its coordinate system.
+     * Returns the first active loaded object of Type type.
      */
-    static AddRelativeForce() {}
+    static FindObjectOfType() {}
 
     /**
-     * Adds a torque to the rigidbody relative to its coordinate system.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static AddRelativeTorque() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Adds a torque to the rigidbody.
+     * Clones the object original and returns the clone.
      */
-    static AddTorque() {}
-
-    /**
-     * The closest point to the bounding box of the attached colliders.
-     */
-    static ClosestPointOnBounds() {}
-
-    /**
-     * The velocity of the rigidbody at the point worldPoint in global space.
-     */
-    static GetPointVelocity() {}
-
-    /**
-     * The velocity relative to the rigidbody at the point relativePoint.
-     */
-    static GetRelativePointVelocity() {}
-
-    /**
-     * Is the rigidbody sleeping?
-     */
-    static IsSleeping() {}
-
-    /**
-     * Moves the rigidbody to position.
-     */
-    static MovePosition() {}
-
-    /**
-     * Rotates the rigidbody to rotation.
-     */
-    static MoveRotation() {}
-
-    /**
-     * Reset the center of mass of the rigidbody.
-     */
-    static ResetCenterOfMass() {}
-
-    /**
-     * Reset the inertia tensor value and rotation.
-     */
-    static ResetInertiaTensor() {}
-
-    /**
-     * Sets the mass based on the attached colliders assuming a constant density.
-     */
-    static SetDensity() {}
-
-    /**
-     * Forces a rigidbody to sleep at least one frame.
-     */
-    static Sleep() {}
-
-    /**
-     * Tests if a rigidbody would collide with anything, if it was moved through the scene.
-     */
-    static SweepTest() {}
-
-    /**
-     * Like Rigidbody.SweepTest, but returns all hits.
-     */
-    static SweepTestAll() {}
-
-    /**
-     * Forces a rigidbody to wake up.
-     */
-    static WakeUp() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

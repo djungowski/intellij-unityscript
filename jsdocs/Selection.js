@@ -100,6 +100,21 @@ class Selection {
     static set transforms(value) {}
 
 
+    /**
+     * Returns whether an object is contained in the current selection.
+     */
+    static Contains() {}
+
+    /**
+     * Returns the current selection filtered by type and mode.
+     */
+    static GetFiltered() {}
+
+    /**
+     * Allows for fine grained control of the selection type using the SelectionMode bitmask.
+     */
+    static GetTransforms() {}
+
 
 
 }

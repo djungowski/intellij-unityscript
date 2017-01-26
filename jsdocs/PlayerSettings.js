@@ -701,14 +701,100 @@ class PlayerSettings {
 
 
     /**
-     * Returns the instance id of the object.
+     * Get graphics APIs to be used on a build platform.
      */
-    static GetInstanceID() {}
+    static GetGraphicsAPIs() {}
 
     /**
-     * Returns the name of the game object.
+     * Returns the list of assigned icons for the specified platform.
      */
-    static ToString() {}
+    static GetIconsForTargetGroup() {}
+
+    /**
+     * Returns a list of icon sizes for the specified platform.
+     */
+    static GetIconSizesForTargetGroup() {}
+
+    /**
+     * Get user-specified symbols for script compilation for the given build target group.
+     */
+    static GetScriptingDefineSymbolsForGroup() {}
+
+    /**
+     * Get stack trace logging options.
+     */
+    static GetStackTraceLogType() {}
+
+    /**
+     * Is a build platform using automatic graphics API choice?
+     */
+    static GetUseDefaultGraphicsAPIs() {}
+
+    /**
+     * Returns whether or not the specified aspect ratio is enabled.
+     */
+    static HasAspectRatio() {}
+
+    /**
+     * Enables the specified aspect ratio.
+     */
+    static SetAspectRatio() {}
+
+    /**
+     * Set graphics APIs to be used on a build platform.
+     */
+    static SetGraphicsAPIs() {}
+
+    /**
+     * Assign a list of icons for the specified platform.
+     */
+    static SetIconsForTargetGroup() {}
+
+    /**
+     * Set user-specified symbols for script compilation for the given build target group.
+     */
+    static SetScriptingDefineSymbolsForGroup() {}
+
+    /**
+     * Set stack trace logging options. 
+Note: calling this function will implicitly call Application.SetStackTraceLogType.
+     */
+    static SetStackTraceLogType() {}
+
+    /**
+     * Should a build platform use automatic graphics API choice.
+     */
+    static SetUseDefaultGraphicsAPIs() {}
+
+    /**
+     * Removes a gameobject, component or asset.
+     */
+    static Destroy() {}
+
+    /**
+     * Destroys the object obj immediately.
+     */
+    static DestroyImmediate() {}
+
+    /**
+     * Makes the object target not be destroyed automatically when loading a new scene.
+     */
+    static DontDestroyOnLoad() {}
+
+    /**
+     * Returns the first active loaded object of Type type.
+     */
+    static FindObjectOfType() {}
+
+    /**
+     * Returns a list of all active loaded objects of Type type.
+     */
+    static FindObjectsOfType() {}
+
+    /**
+     * Clones the object original and returns the clone.
+     */
+    static Instantiate() {}
 
 
     /**

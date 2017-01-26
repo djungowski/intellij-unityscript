@@ -30,6 +30,21 @@ class DynamicGI {
     static set updateThreshold(value) {}
 
 
+    /**
+     * Allows to set an emissive color for a given renderer quickly, without the need to render the emissive input for the entire system.
+     */
+    static SetEmissive() {}
+
+    /**
+     * Schedules an update of the environment texture.
+     */
+    static UpdateEnvironment() {}
+
+    /**
+     * Schedules an update of the albedo and emissive textures of a system that contains the renderer or the terrain.
+     */
+    static UpdateMaterials() {}
+
 
 
 }

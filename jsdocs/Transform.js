@@ -1,159 +1,34 @@
 class Transform {
 
     /**
-     * Unparents all children.
+     * Removes a gameobject, component or asset.
      */
-    static DetachChildren() {}
+    static Destroy() {}
 
     /**
-     * Finds a child by name and returns it.
+     * Destroys the object obj immediately.
      */
-    static Find() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns a transform child by index.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetChild() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Gets the sibling index.
+     * Returns the first active loaded object of Type type.
      */
-    static GetSiblingIndex() {}
+    static FindObjectOfType() {}
 
     /**
-     * Transforms a direction from world space to local space. The opposite of Transform.TransformDirection.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static InverseTransformDirection() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Transforms position from world space to local space.
+     * Clones the object original and returns the clone.
      */
-    static InverseTransformPoint() {}
-
-    /**
-     * Transforms a vector from world space to local space. The opposite of Transform.TransformVector.
-     */
-    static InverseTransformVector() {}
-
-    /**
-     * Is this transform a child of parent?
-     */
-    static IsChildOf() {}
-
-    /**
-     * Rotates the transform so the forward vector points at /target/&#039;s current position.
-     */
-    static LookAt() {}
-
-    /**
-     * Applies a rotation of eulerAngles.z degrees around the z axis, eulerAngles.x degrees around the x axis, and eulerAngles.y degrees around the y axis (in that order).
-     */
-    static Rotate() {}
-
-    /**
-     * Rotates the transform about axis passing through point in world coordinates by angle degrees.
-     */
-    static RotateAround() {}
-
-    /**
-     * Move the transform to the start of the local transform list.
-     */
-    static SetAsFirstSibling() {}
-
-    /**
-     * Move the transform to the end of the local transform list.
-     */
-    static SetAsLastSibling() {}
-
-    /**
-     * Set the parent of the transform.
-     */
-    static SetParent() {}
-
-    /**
-     * Sets the sibling index.
-     */
-    static SetSiblingIndex() {}
-
-    /**
-     * Transforms direction from local space to world space.
-     */
-    static TransformDirection() {}
-
-    /**
-     * Transforms position from local space to world space.
-     */
-    static TransformPoint() {}
-
-    /**
-     * Transforms vector from local space to world space.
-     */
-    static TransformVector() {}
-
-    /**
-     * Moves the transform in the direction and distance of translation.
-     */
-    static Translate() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

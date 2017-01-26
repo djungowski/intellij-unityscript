@@ -1,114 +1,54 @@
 class AssetBundle {
 
     /**
-     * Check if an AssetBundle contains a specific object.
+     * Synchronously loads an AssetBundle from a file on disk.
      */
-    static Contains() {}
+    static LoadFromFile() {}
 
     /**
-     * Return all asset names in the AssetBundle.
+     * Asynchronously loads an AssetBundle from a file on disk.
      */
-    static GetAllAssetNames() {}
+    static LoadFromFileAsync() {}
 
     /**
-     * Return all the scene asset paths (paths to *.unity assets) in the AssetBundle.
+     * Synchronously create an AssetBundle from a memory region.
      */
-    static GetAllScenePaths() {}
+    static LoadFromMemory() {}
 
     /**
-     * Loads all assets contained in the asset bundle that inherit from type.
+     * Asynchronously create an AssetBundle from a memory region.
      */
-    static LoadAllAssets() {}
+    static LoadFromMemoryAsync() {}
 
     /**
-     * Loads all assets contained in the asset bundle asynchronously.
+     * Removes a gameobject, component or asset.
      */
-    static LoadAllAssetsAsync() {}
+    static Destroy() {}
 
     /**
-     * Loads asset with name from the bundle.
+     * Destroys the object obj immediately.
      */
-    static LoadAsset() {}
+    static DestroyImmediate() {}
 
     /**
-     * Asynchronously loads asset with name from the bundle.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static LoadAssetAsync() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Loads asset and sub assets with name from the bundle.
+     * Returns the first active loaded object of Type type.
      */
-    static LoadAssetWithSubAssets() {}
+    static FindObjectOfType() {}
 
     /**
-     * Loads asset with sub assets with name from the bundle asynchronously.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static LoadAssetWithSubAssetsAsync() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Unloads all assets in the bundle.
+     * Clones the object original and returns the clone.
      */
-    static Unload() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Check if an AssetBundle contains a specific object.
-     */
-    static Contains() {}
-
-    /**
-     * Return all asset names in the AssetBundle.
-     */
-    static GetAllAssetNames() {}
-
-    /**
-     * Return all the scene asset paths (paths to *.unity assets) in the AssetBundle.
-     */
-    static GetAllScenePaths() {}
-
-    /**
-     * Loads all assets contained in the asset bundle that inherit from type.
-     */
-    static LoadAllAssets() {}
-
-    /**
-     * Loads all assets contained in the asset bundle asynchronously.
-     */
-    static LoadAllAssetsAsync() {}
-
-    /**
-     * Loads asset with name from the bundle.
-     */
-    static LoadAsset() {}
-
-    /**
-     * Asynchronously loads asset with name from the bundle.
-     */
-    static LoadAssetAsync() {}
-
-    /**
-     * Loads asset and sub assets with name from the bundle.
-     */
-    static LoadAssetWithSubAssets() {}
-
-    /**
-     * Loads asset with sub assets with name from the bundle asynchronously.
-     */
-    static LoadAssetWithSubAssetsAsync() {}
-
-    /**
-     * Unloads all assets in the bundle.
-     */
-    static Unload() {}
+    static Instantiate() {}
 
 
     /**

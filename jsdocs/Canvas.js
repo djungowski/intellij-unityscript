@@ -1,64 +1,49 @@
 class Canvas {
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+     * Force all canvases to update their content.
      */
-    static BroadcastMessage() {}
+    static ForceUpdateCanvases() {}
 
     /**
-     * Is this game object tagged with tag ?
+     * Returns the default material that can be used for rendering normal elements on the Canvas.
      */
-    static CompareTag() {}
+    static GetDefaultCanvasMaterial() {}
 
     /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
+     * Gets or generates the ETC1 Material.
      */
-    static GetComponent() {}
+    static GetETC1SupportedCanvasMaterial() {}
 
     /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
+     * Removes a gameobject, component or asset.
      */
-    static GetComponentInChildren() {}
+    static Destroy() {}
 
     /**
-     * Returns the component of Type type in the GameObject or any of its parents.
+     * Destroys the object obj immediately.
      */
-    static GetComponentInParent() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns all components of Type type in the GameObject.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetComponents() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Returns all components of Type type in the GameObject or any of its children.
+     * Returns the first active loaded object of Type type.
      */
-    static GetComponentsInChildren() {}
+    static FindObjectOfType() {}
 
     /**
-     * Returns all components of Type type in the GameObject or any of its parents.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetComponentsInParent() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
+     * Clones the object original and returns the clone.
      */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

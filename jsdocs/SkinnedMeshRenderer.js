@@ -1,94 +1,34 @@
 class SkinnedMeshRenderer {
 
     /**
-     * Creates a snapshot of SkinnedMeshRenderer and stores it in mesh.
+     * Removes a gameobject, component or asset.
      */
-    static BakeMesh() {}
+    static Destroy() {}
 
     /**
-     * Returns weight of BlendShape on this renderer.
+     * Destroys the object obj immediately.
      */
-    static GetBlendShapeWeight() {}
+    static DestroyImmediate() {}
 
     /**
-     * Sets the weight in percent of a BlendShape on this Renderer.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static SetBlendShapeWeight() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+     * Returns the first active loaded object of Type type.
      */
-    static BroadcastMessage() {}
+    static FindObjectOfType() {}
 
     /**
-     * Is this game object tagged with tag ?
+     * Returns a list of all active loaded objects of Type type.
      */
-    static CompareTag() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
+     * Clones the object original and returns the clone.
      */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Returns an array of closest reflection probes with weights, weight shows how much influence the probe has on the renderer, this value is also used when blending between reflection probes occur.
-     */
-    static GetClosestReflectionProbes() {}
-
-    /**
-     * Get per-renderer material property block.
-     */
-    static GetPropertyBlock() {}
-
-    /**
-     * Lets you add per-renderer material parameters without duplicating a material.
-     */
-    static SetPropertyBlock() {}
+    static Instantiate() {}
 
 
     /**

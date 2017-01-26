@@ -1,84 +1,34 @@
 class CharacterController {
 
     /**
-     * A more complex move function taking absolute movement deltas.
+     * Removes a gameobject, component or asset.
      */
-    static Move() {}
+    static Destroy() {}
 
     /**
-     * Moves the character with speed.
+     * Destroys the object obj immediately.
      */
-    static SimpleMove() {}
+    static DestroyImmediate() {}
 
     /**
-     * The closest point to the bounding box of the attached collider.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static ClosestPointOnBounds() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Casts a Ray that ignores all Colliders except this one.
+     * Returns the first active loaded object of Type type.
      */
-    static Raycast() {}
+    static FindObjectOfType() {}
 
     /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static BroadcastMessage() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Is this game object tagged with tag ?
+     * Clones the object original and returns the clone.
      */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

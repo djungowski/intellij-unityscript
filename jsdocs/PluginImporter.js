@@ -1,194 +1,49 @@
 class PluginImporter {
 
     /**
-     * Clear all plugin settings and set the compatability with Any Platform to true.
+     * Returns all plugin importers for all platforms.
      */
-    static ClearSettings() {}
+    static GetAllImporters() {}
 
     /**
-     * Is plugin comptabile with any platform.
+     * Returns all plugin importers for specfied platform.
      */
-    static GetCompatibleWithAnyPlatform() {}
+    static GetImporters() {}
 
     /**
-     * Is plugin compatible with editor.
+     * Retrieves the asset importer for the asset at path.
      */
-    static GetCompatibleWithEditor() {}
+    static GetAtPath() {}
 
     /**
-     * Is plugin compatible with specified platform.
+     * Removes a gameobject, component or asset.
      */
-    static GetCompatibleWithPlatform() {}
+    static Destroy() {}
 
     /**
-     * Returns editor specific data for specified key.
+     * Destroys the object obj immediately.
      */
-    static GetEditorData() {}
+    static DestroyImmediate() {}
 
     /**
-     * Is Editor excluded when Any Platform is set to true.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetExcludeEditorFromAnyPlatform() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Is platform excluded when Any Platform set to true.
+     * Returns the first active loaded object of Type type.
      */
-    static GetExcludeFromAnyPlatform() {}
+    static FindObjectOfType() {}
 
     /**
-     * Identifies whether or not this plugin will be overridden if a plugin of the same name is placed in your project folder.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static GetIsOverridable() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Get platform specific data.
+     * Clones the object original and returns the clone.
      */
-    static GetPlatformData() {}
-
-    /**
-     * Set compatiblity with any platform.
-     */
-    static SetCompatibleWithAnyPlatform() {}
-
-    /**
-     * Set compatiblity with any editor.
-     */
-    static SetCompatibleWithEditor() {}
-
-    /**
-     * Set compatiblity with specified platform.
-     */
-    static SetCompatibleWithPlatform() {}
-
-    /**
-     * Set editor specific data.
-     */
-    static SetEditorData() {}
-
-    /**
-     * Exclude Editor from compatible platforms when Any Platform is set to true.
-     */
-    static SetExcludeEditorFromAnyPlatform() {}
-
-    /**
-     * Exclude platform from compatible platforms when Any Platform is set to true.
-     */
-    static SetExcludeFromAnyPlatform() {}
-
-    /**
-     * Set platform specific data.
-     */
-    static SetPlatformData() {}
-
-    /**
-     * Identifies whether or not this plugin should be included in the current build target.
-     */
-    static ShouldIncludeInBuild() {}
-
-    /**
-     * Save asset importer settings if asset importer is dirty.
-     */
-    static SaveAndReimport() {}
-
-    /**
-     * Set the AssetBundle name and variant.
-     */
-    static SetAssetBundleNameAndVariant() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Clear all plugin settings and set the compatability with Any Platform to true.
-     */
-    static ClearSettings() {}
-
-    /**
-     * Is plugin comptabile with any platform.
-     */
-    static GetCompatibleWithAnyPlatform() {}
-
-    /**
-     * Is plugin compatible with editor.
-     */
-    static GetCompatibleWithEditor() {}
-
-    /**
-     * Is plugin compatible with specified platform.
-     */
-    static GetCompatibleWithPlatform() {}
-
-    /**
-     * Returns editor specific data for specified key.
-     */
-    static GetEditorData() {}
-
-    /**
-     * Is Editor excluded when Any Platform is set to true.
-     */
-    static GetExcludeEditorFromAnyPlatform() {}
-
-    /**
-     * Is platform excluded when Any Platform set to true.
-     */
-    static GetExcludeFromAnyPlatform() {}
-
-    /**
-     * Identifies whether or not this plugin will be overridden if a plugin of the same name is placed in your project folder.
-     */
-    static GetIsOverridable() {}
-
-    /**
-     * Get platform specific data.
-     */
-    static GetPlatformData() {}
-
-    /**
-     * Set compatiblity with any platform.
-     */
-    static SetCompatibleWithAnyPlatform() {}
-
-    /**
-     * Set compatiblity with any editor.
-     */
-    static SetCompatibleWithEditor() {}
-
-    /**
-     * Set compatiblity with specified platform.
-     */
-    static SetCompatibleWithPlatform() {}
-
-    /**
-     * Set editor specific data.
-     */
-    static SetEditorData() {}
-
-    /**
-     * Exclude Editor from compatible platforms when Any Platform is set to true.
-     */
-    static SetExcludeEditorFromAnyPlatform() {}
-
-    /**
-     * Exclude platform from compatible platforms when Any Platform is set to true.
-     */
-    static SetExcludeFromAnyPlatform() {}
-
-    /**
-     * Set platform specific data.
-     */
-    static SetPlatformData() {}
-
-    /**
-     * Identifies whether or not this plugin should be included in the current build target.
-     */
-    static ShouldIncludeInBuild() {}
+    static Instantiate() {}
 
 
     /**

@@ -1,44 +1,39 @@
 class CubemapArray {
 
     /**
-     * Actually apply all previous SetPixels changes.
+     * Removes a gameobject, component or asset.
      */
-    static Apply() {}
+    static Destroy() {}
 
     /**
-     * Returns pixel colors of a single array slice/face.
+     * Destroys the object obj immediately.
      */
-    static GetPixels() {}
+    static DestroyImmediate() {}
 
     /**
-     * Returns pixel colors of a single array slice/face.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static GetPixels32() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Set pixel colors for a single array slice/face.
+     * Returns the first active loaded object of Type type.
      */
-    static SetPixels() {}
+    static FindObjectOfType() {}
 
     /**
-     * Set pixel colors for a single array slice/face.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static SetPixels32() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns the instance id of the object.
+     * Clones the object original and returns the clone.
      */
-    static GetInstanceID() {}
+    static Instantiate() {}
 
     /**
-     * Returns the name of the game object.
+     * Sets Anisotropic limits.
      */
-    static ToString() {}
-
-    /**
-     * Retrieve a native (underlying graphics API) pointer to the texture resource.
-     */
-    static GetNativeTexturePtr() {}
+    static SetGlobalAnisotropicFilteringLimits() {}
 
 
     /**

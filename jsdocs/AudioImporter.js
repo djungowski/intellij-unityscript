@@ -1,44 +1,39 @@
 class AudioImporter {
 
     /**
-     * Clears the sample settings override for the given platform.
+     * Retrieves the asset importer for the asset at path.
      */
-    static ClearSampleSettingOverride() {}
+    static GetAtPath() {}
 
     /**
-     * Returns whether a given build target has its sample settings currently overridden.
+     * Removes a gameobject, component or asset.
      */
-    static ContainsSampleSettingsOverride() {}
+    static Destroy() {}
 
     /**
-     * Return the current override settings for the given platform.
+     * Destroys the object obj immediately.
      */
-    static GetOverrideSampleSettings() {}
+    static DestroyImmediate() {}
 
     /**
-     * Sets the override sample settings for the given platform.
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static SetOverrideSampleSettings() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Save asset importer settings if asset importer is dirty.
+     * Returns the first active loaded object of Type type.
      */
-    static SaveAndReimport() {}
+    static FindObjectOfType() {}
 
     /**
-     * Set the AssetBundle name and variant.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static SetAssetBundleNameAndVariant() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Returns the instance id of the object.
+     * Clones the object original and returns the clone.
      */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
+    static Instantiate() {}
 
 
     /**

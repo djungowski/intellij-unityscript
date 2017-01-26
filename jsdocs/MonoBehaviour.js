@@ -1,134 +1,39 @@
 class MonoBehaviour {
 
     /**
-     * Cancels all Invoke calls on this MonoBehaviour.
+     * Logs message to the Unity Console (identical to Debug.Log).
      */
-    static CancelInvoke() {}
+    static print() {}
 
     /**
-     * Invokes the method methodName in time seconds.
+     * Removes a gameobject, component or asset.
      */
-    static Invoke() {}
+    static Destroy() {}
 
     /**
-     * Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds.
+     * Destroys the object obj immediately.
      */
-    static InvokeRepeating() {}
+    static DestroyImmediate() {}
 
     /**
-     * Is any invoke on methodName pending?
+     * Makes the object target not be destroyed automatically when loading a new scene.
      */
-    static IsInvoking() {}
+    static DontDestroyOnLoad() {}
 
     /**
-     * Starts a coroutine.
+     * Returns the first active loaded object of Type type.
      */
-    static StartCoroutine() {}
+    static FindObjectOfType() {}
 
     /**
-     * Stops all coroutines running on this behaviour.
+     * Returns a list of all active loaded objects of Type type.
      */
-    static StopAllCoroutines() {}
+    static FindObjectsOfType() {}
 
     /**
-     * Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour.
+     * Clones the object original and returns the clone.
      */
-    static StopCoroutine() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object or any of its children.
-     */
-    static BroadcastMessage() {}
-
-    /**
-     * Is this game object tagged with tag ?
-     */
-    static CompareTag() {}
-
-    /**
-     * Returns the component of Type type if the game object has one attached, null if it doesn&#039;t.
-     */
-    static GetComponent() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its children using depth first search.
-     */
-    static GetComponentInChildren() {}
-
-    /**
-     * Returns the component of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentInParent() {}
-
-    /**
-     * Returns all components of Type type in the GameObject.
-     */
-    static GetComponents() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its children.
-     */
-    static GetComponentsInChildren() {}
-
-    /**
-     * Returns all components of Type type in the GameObject or any of its parents.
-     */
-    static GetComponentsInParent() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object.
-     */
-    static SendMessage() {}
-
-    /**
-     * Calls the method named methodName on every MonoBehaviour in this game object and on every ancestor of the behaviour.
-     */
-    static SendMessageUpwards() {}
-
-    /**
-     * Returns the instance id of the object.
-     */
-    static GetInstanceID() {}
-
-    /**
-     * Returns the name of the game object.
-     */
-    static ToString() {}
-
-    /**
-     * Cancels all Invoke calls on this MonoBehaviour.
-     */
-    static CancelInvoke() {}
-
-    /**
-     * Invokes the method methodName in time seconds.
-     */
-    static Invoke() {}
-
-    /**
-     * Invokes the method methodName in time seconds, then repeatedly every repeatRate seconds.
-     */
-    static InvokeRepeating() {}
-
-    /**
-     * Is any invoke on methodName pending?
-     */
-    static IsInvoking() {}
-
-    /**
-     * Starts a coroutine.
-     */
-    static StartCoroutine() {}
-
-    /**
-     * Stops all coroutines running on this behaviour.
-     */
-    static StopAllCoroutines() {}
-
-    /**
-     * Stops the first coroutine named methodName, or the coroutine stored in routine running on this behaviour.
-     */
-    static StopCoroutine() {}
+    static Instantiate() {}
 
 
     /**

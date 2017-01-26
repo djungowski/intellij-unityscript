@@ -11,29 +11,64 @@ class Quaternion {
 
 
     /**
-     * Set x, y, z and w components of an existing Quaternion.
+     * Returns the angle in degrees between two rotations a and b.
      */
-    static Set() {}
+    static Angle() {}
+
+    /**
+     * Creates a rotation which rotates angle degrees around axis.
+     */
+    static AngleAxis() {}
+
+    /**
+     * The dot product between two rotations.
+     */
+    static Dot() {}
+
+    /**
+     * Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis, and y degrees around the y axis (in that order).
+     */
+    static Euler() {}
 
     /**
      * Creates a rotation which rotates from fromDirection to toDirection.
      */
-    static SetFromToRotation() {}
+    static FromToRotation() {}
+
+    /**
+     * Returns the Inverse of rotation.
+     */
+    static Inverse() {}
+
+    /**
+     * Interpolates between a and b by t and normalizes the result afterwards. The parameter t is clamped to the range [0, 1].
+     */
+    static Lerp() {}
+
+    /**
+     * Interpolates between a and b by t and normalizes the result afterwards. The parameter t is not clamped.
+     */
+    static LerpUnclamped() {}
 
     /**
      * Creates a rotation with the specified forward and upwards directions.
      */
-    static SetLookRotation() {}
+    static LookRotation() {}
 
     /**
-     * Converts a rotation to angle-axis representation (angles in degrees).
+     * Rotates a rotation from towards to.
      */
-    static ToAngleAxis() {}
+    static RotateTowards() {}
 
     /**
-     * Returns a nicely formatted string of the Quaternion.
+     * Spherically interpolates between a and b by t. The parameter t is clamped to the range [0, 1].
      */
-    static ToString() {}
+    static Slerp() {}
+
+    /**
+     * Spherically interpolates between a and b by t. The parameter t is not clamped.
+     */
+    static SlerpUnclamped() {}
 
 
     /**
