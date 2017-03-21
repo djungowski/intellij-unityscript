@@ -14,7 +14,7 @@ if(isset($argv[1])) {
 }
 
 $jsdocsPath = '../jsdocs/';
-$classRegex = "/^([a-zA-Z]*)\.html$/";
+$classRegex = "/^([a-zA-Z0-9]*)\.html$/";
 $jarArchive = '../jar/unityscript';
 $jarFileEnding = 'jar';
 $createdFiles = 0;
