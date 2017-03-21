@@ -12,7 +12,7 @@ Scripts and Builds in order to use IntelliJ with UnityScript
 If you don't want to take these steps for every Unity project, add the Jar to the Global Libraries instead of only the Libraries
 
 ## Using in WebStorm/PhpStorm/*Storm
-1. Download the [repository as zip file](archive/master.zip) (alternatively clonem the repo and omit step 2)
+1. Download the [unityscript-5.5.zip](jar/unityscript-5.5.zip) (alternatively clone the repo and omit step 2)
 2. Extract archive
 3. Make sure that the JavaScript language version is set to ECMAScript 6 (IntelliJ Preferences → Project Settings → JavaScript)
 4. Open Project Settings and navigate to JavaScript → Libraries)
