@@ -100,12 +100,12 @@ class EditorApplication {
     static set isRemoteConnected(value) {}
 
     /**
-     * This property is true if the Editor is currently refreshing the AssetDatabase. During this time, the editor checks to see if any files have changed, whether they need to be reimported, and reimports them. (Read Only)
+     * True if the Editor is currently refreshing the AssetDatabase.
      */
     static get isUpdating() {}
 
     /**
-     * This property is true if the Editor is currently refreshing the AssetDatabase. During this time, the editor checks to see if any files have changed, whether they need to be reimported, and reimports them. (Read Only)
+     * True if the Editor is currently refreshing the AssetDatabase.
      */
     static set isUpdating(value) {}
 

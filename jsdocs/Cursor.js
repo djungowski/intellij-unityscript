@@ -1,27 +1,27 @@
 class Cursor {
     /**
-     * How should the cursor be handled?
+     * Determines whether the hardware pointer is locked to the center of the view, constrained to the window, or not constrained at all.
      */
     static get lockState() {}
 
     /**
-     * How should the cursor be handled?
+     * Determines whether the hardware pointer is locked to the center of the view, constrained to the window, or not constrained at all.
      */
     static set lockState(value) {}
 
     /**
-     * Should the cursor be visible?
+     * Determines whether the hardware pointer is visible or not.
      */
     static get visible() {}
 
     /**
-     * Should the cursor be visible?
+     * Determines whether the hardware pointer is visible or not.
      */
     static set visible(value) {}
 
 
     /**
-     * Change the mouse cursor to the set texture OnMouseEnter.
+     * Sets the mouse cursor to the given texture.
      */
     static SetCursor() {}
 

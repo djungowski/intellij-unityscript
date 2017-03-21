@@ -57,6 +57,16 @@ class TouchScreenKeyboard {
     set active(value) {}
 
     /**
+     * Specifies whether the TouchScreenKeyboard supports the selection property. (Read Only)
+     */
+    get canGetSelection() {}
+
+    /**
+     * Specifies whether the TouchScreenKeyboard supports the selection property. (Read Only)
+     */
+    set canGetSelection(value) {}
+
+    /**
      * Specifies if input process was finished. (Read Only)
      */
     get done() {}
@@ -65,6 +75,16 @@ class TouchScreenKeyboard {
      * Specifies if input process was finished. (Read Only)
      */
     set done(value) {}
+
+    /**
+     * Returns the character range of the selected text within the string currently being edited. (Read Only)
+     */
+    get selection() {}
+
+    /**
+     * Returns the character range of the selected text within the string currently being edited. (Read Only)
+     */
+    set selection(value) {}
 
     /**
      * Specified on which display the software keyboard will appear.

@@ -248,7 +248,7 @@ class Material {
     Lerp() {}
 
     /**
-     * Set a ComputeBuffer value.
+     * Set a named ComputeBuffer value.
      */
     SetBuffer() {}
 

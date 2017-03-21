@@ -101,7 +101,7 @@ class GUI {
     static BeginScrollView() {}
 
     /**
-     * Create a Box on the GUI Layer. A Box can contain text, an image, or a combination of these along with an optional tooltip, through using a GUIContent parameter. You may also use a GUIStyle to adjust the layout of items in a box, text colour and other properties.
+     * Create a Box on the GUI Layer.
      */
     static Box() {}
 
@@ -131,7 +131,7 @@ class GUI {
     static DrawTexture() {}
 
     /**
-     * Draw a texture within a rectangle with the given texture coordinates. Use this function for clipping or tiling the image within the given rectangle.
+     * Draw a texture within a rectangle with the given texture coordinates.
      */
     static DrawTextureWithTexCoords() {}
 

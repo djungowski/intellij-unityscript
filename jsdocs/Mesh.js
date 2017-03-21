@@ -253,6 +253,11 @@ class Mesh {
     CombineMeshes() {}
 
     /**
+     * Gets the bind poses for this instance.
+     */
+    GetBindposes() {}
+
+    /**
      * Returns the frame count for a blend shape.
      */
     GetBlendShapeFrameCount() {}
@@ -278,7 +283,27 @@ class Mesh {
     GetBlendShapeName() {}
 
     /**
-     * Returns the index buffer for the sub-Mesh.
+     * Gets the bone weights for this instance.
+     */
+    GetBoneWeights() {}
+
+    /**
+     * Gets the vertex colors for this instance.
+     */
+    GetColors() {}
+
+    /**
+     * Gets the index count of the given submesh.
+     */
+    GetIndexCount() {}
+
+    /**
+     * Gets the starting index location within the Mesh&#039;s index buffer, for the given submesh.
+     */
+    GetIndexStart() {}
+
+    /**
+     * Gets the index buffer for the specified sub mesh on this instance.
      */
     GetIndices() {}
 
@@ -293,12 +318,22 @@ class Mesh {
     GetNativeVertexBufferPtr() {}
 
     /**
+     * Gets the vertex normals for this instance.
+     */
+    GetNormals() {}
+
+    /**
+     * Gets the tangents for this instance.
+     */
+    GetTangents() {}
+
+    /**
      * Gets the topology of a sub-Mesh.
      */
     GetTopology() {}
 
     /**
-     * Returns the triangle list for the sub-Mesh.
+     * Gets the triangle list for the specified sub mesh on this instance.
      */
     GetTriangles() {}
 
@@ -306,6 +341,11 @@ class Mesh {
      * Get the UVs for a given chanel.
      */
     GetUVs() {}
+
+    /**
+     * Gets the vertex positions for this instance.
+     */
+    GetVertices() {}
 
     /**
      * Optimize mesh for frequent updates.

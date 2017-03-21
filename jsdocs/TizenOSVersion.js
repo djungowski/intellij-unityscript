@@ -4,16 +4,6 @@ class TizenOSVersion {
     /**
      * 
      */
-    get Version23() {}
-
-    /**
-     * 
-     */
-    set Version23(value) {}
-
-    /**
-     * 
-     */
     get Version24() {}
 
     /**

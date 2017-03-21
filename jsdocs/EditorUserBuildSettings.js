@@ -70,6 +70,16 @@ class EditorUserBuildSettings {
     static set buildScriptsOnly(value) {}
 
     /**
+     * Compress files in package.
+     */
+    static get compressFilesInPackage() {}
+
+    /**
+     * Compress files in package.
+     */
+    static set compressFilesInPackage(value) {}
+
+    /**
      * Build data compressed with PSArc.
      */
     static get compressWithPsArc() {}
@@ -388,6 +398,16 @@ class EditorUserBuildSettings {
      * Sets and gets target device type for the application to run on when building to Windows Store platform.
      */
     static set wsaSubtarget(value) {}
+
+    /**
+     * Sets and gets target UWP SDK to build Windows Store application against.
+     */
+    static get wsaUWPSDK() {}
+
+    /**
+     * Sets and gets target UWP SDK to build Windows Store application against.
+     */
+    static set wsaUWPSDK(value) {}
 
     /**
      * Xbox Build subtarget.

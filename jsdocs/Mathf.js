@@ -71,7 +71,7 @@ class Mathf {
     static Acos() {}
 
     /**
-     * Compares two floating point values if they are similar.
+     * Compares two floating point values and returns true if they are similar.
      */
     static Approximately() {}
 

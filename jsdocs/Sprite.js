@@ -57,12 +57,14 @@ class Sprite {
     set border(value) {}
 
     /**
-     * Bounds of the Sprite, specified by its center and extents in world space units.
+     * 
+          Bounds of the Sprite, specified by its center and extents in world space units.
      */
     get bounds() {}
 
     /**
-     * Bounds of the Sprite, specified by its center and extents in world space units.
+     * 
+          Bounds of the Sprite, specified by its center and extents in world space units.
      */
     set bounds(value) {}
 

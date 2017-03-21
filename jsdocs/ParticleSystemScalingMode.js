@@ -22,12 +22,16 @@ class ParticleSystemScalingMode {
     set Local(value) {}
 
     /**
-     * Only apply transform scale to the shape component, which cotnrols where particles are spawned, but does not affect their size or movement.
+     * Only apply transform scale to the shape component, which controls where
+        particles are spawned, but does not affect their size or movement.
+        
      */
     get Shape() {}
 
     /**
-     * Only apply transform scale to the shape component, which cotnrols where particles are spawned, but does not affect their size or movement.
+     * Only apply transform scale to the shape component, which controls where
+        particles are spawned, but does not affect their size or movement.
+        
      */
     set Shape(value) {}
 

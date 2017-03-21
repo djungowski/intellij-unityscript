@@ -11,6 +11,11 @@ class AnimationMode {
 
 
     /**
+     * Marks a property as currently being animated.
+     */
+    static AddPropertyModification() {}
+
+    /**
      * Initialise the start of the animation clip sampling.
      */
     static BeginSampling() {}

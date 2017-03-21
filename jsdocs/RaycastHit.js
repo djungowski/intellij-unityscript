@@ -72,12 +72,12 @@ class RaycastHit {
     set rigidbody(value) {}
 
     /**
-     * The uv texture coordinate at the impact point.
+     * The uv texture coordinate at the collision location.
      */
     get textureCoord() {}
 
     /**
-     * The uv texture coordinate at the impact point.
+     * The uv texture coordinate at the collision location.
      */
     set textureCoord(value) {}
 

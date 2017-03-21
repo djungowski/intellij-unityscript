@@ -320,6 +320,16 @@ class PlayerSettings {
     static set gpuSkinning(value) {}
 
     /**
+     * Selects the graphics job mode to use on platforms that support both Native and Legacy graphics jobs.
+     */
+    static get graphicsJobMode() {}
+
+    /**
+     * Selects the graphics job mode to use on platforms that support both Native and Legacy graphics jobs.
+     */
+    static set graphicsJobMode(value) {}
+
+    /**
      * Enable graphics jobs (multi threaded rendering).
      */
     static get graphicsJobs() {}
@@ -390,12 +400,12 @@ class PlayerSettings {
     static set MTRendering(value) {}
 
     /**
-     * Mute or allow audio from other applications to play in the background while the Unity application is running.
+     * Stops or allows audio from other applications to play in the background while your Unity application is running.
      */
     static get muteOtherAudioSources() {}
 
     /**
-     * Mute or allow audio from other applications to play in the background while the Unity application is running.
+     * Stops or allows audio from other applications to play in the background while your Unity application is running.
      */
     static set muteOtherAudioSources(value) {}
 

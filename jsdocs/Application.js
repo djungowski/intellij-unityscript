@@ -150,16 +150,6 @@ class Application {
     static set isPlaying(value) {}
 
     /**
-     * Checks whether splash screen is being shown.
-     */
-    static get isShowingSplashScreen() {}
-
-    /**
-     * Checks whether splash screen is being shown.
-     */
-    static set isShowingSplashScreen(value) {}
-
-    /**
      * Are we running inside a web player? (Read Only)
      */
     static get isWebPlayer() {}
@@ -321,7 +311,7 @@ class Application {
     static ExternalCall() {}
 
     /**
-     * Evaluates script function in the containing web page.
+     * Execution of a script function in the contained web page.
      */
     static ExternalEval() {}
 

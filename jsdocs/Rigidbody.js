@@ -42,12 +42,12 @@ class Rigidbody {
     set angularDrag(value) {}
 
     /**
-     * The angular velocity vector of the rigidbody.
+     * The angular velocity vector of the rigidbody measured in radians per second.
      */
     get angularVelocity() {}
 
     /**
-     * The angular velocity vector of the rigidbody.
+     * The angular velocity vector of the rigidbody measured in radians per second.
      */
     set angularVelocity(value) {}
 

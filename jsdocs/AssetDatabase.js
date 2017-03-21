@@ -46,7 +46,7 @@ class AssetDatabase {
     static ExportPackage() {}
 
     /**
-     * Search the asset database using a search filter string.
+     * Search the asset database using the search filter string.
      */
     static FindAssets() {}
 
@@ -161,12 +161,17 @@ class AssetDatabase {
     static IsMainAssetAtPathLoaded() {}
 
     /**
+     * Query whether an asset&#039;s metadata (.meta) file is open for edit in version control.
+     */
+    static IsMetaFileOpenForEdit() {}
+
+    /**
      * Is asset a native asset?
      */
     static IsNativeAsset() {}
 
     /**
-     * Use IsOpenForEdit to determine if the asset is open for edit by the version control.
+     * Query whether an asset file is open for edit in version control.
      */
     static IsOpenForEdit() {}
 
